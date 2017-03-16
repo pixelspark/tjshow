@@ -1,0 +1,68 @@
+day_monday:Monday
+day_tuesday:Tuesday
+day_wednesday:Wednesday
+day_thursday:Thursday
+day_friday:Friday
+day_saturday:Saturday
+day_sunday:Sunday
+
+yes:Yes
+no:No
+resource_not_found:File not found:
+theme_bright:Light
+theme_default:Dark
+theme_vista:Vista
+file_load_failed:Could not open file. The file is inaccessible, does not exist or you do not have the right permissions to do so. The file may also be damaged or in a wrong format.
+file_format_invalid:The file could not be loaded. Separate tracks (in ttx-files) can only be added to an existing timeline. If you tried to open a show-file (tsx-files), it might be damaged.
+graph_item_hide:Hide
+file_property_manual_entry:Manual entry...
+endpoint_unknown:[Unknown]
+ok:OK
+tab_no_orphans:There are no other windows to open
+locale:Language
+copy:Copy
+paste:Paste
+cut:Cut
+
+key_up:Up
+key_down:Down
+key_ctrl:Ctrl
+key_shift:Shift
+key_alt:Alt
+key_delete:Del
+key_delete_selection:Delete selection
+key_delete_item:Delete item
+key_insert:Ins
+key_return:Return
+key_space:Space
+key_home:Home
+key_end:End
+key_home_slider:0%
+key_end_slider:100%
+key_escape:Esc
+key_backspace:Backspace
+
+month_january:January
+month_february:Februari
+month_march:March
+month_april:April
+month_may:May
+month_june:June
+month_july:July
+month_august:August
+month_september:September
+month_october:October
+month_november:November
+month_december:December
+
+toolbar_tip:Tips & tricks
+type_null:Null
+type_string:Text
+type_integer:Integer
+type_double:Double
+type_bool:Boolean
+type_object:Object
+type_tuple:Tuple
+
+undo:Undo
+redo:Redo

@@ -1,0 +1,59 @@
+jingle_application_name:TJingle
+jingle_about:About
+jingle_device:Sound card (number)
+jingle_effects:Effects
+jingle_file_menu:File
+jingle_file_exit:Exit  Alt-F4
+jingle_windows_menu:Window
+jingle_log:Show application log...
+jingle_properties_description:Collection properties...
+jingle_collection_name:Collection name
+jingle_file:File
+jingle_open:Attach jingle to button
+jingle_open_jingle:Set jingle...
+jingle_fade_in:Fade-in jingle
+jingle_fade_out:Fade-out jingle
+jingle_properties_change:Properties
+jingle_play:Play jingle
+jingle_stop:Stop jingle
+jingle_stop_all:Stop all jingles (on this page)
+jingle_stop_all_global:Stop all jingles
+jingle_play_random:Play a random jingle (on this page)
+jingle_preload:Pre-load jingles for instant start
+jingle_import_dir:Import directory...
+jingle_new:New jingle-set
+jingle_save:Save kingle-set
+jingle_open:Open jingle-set
+jingle_file_new:New jingle-set
+jingle_file_open:Open jingle-set...
+jingle_file_save:Save jingle-set...
+jingle_open_set:Open jingle-set...
+jingle_settings:Settings...
+jingle_user_interface:User interface
+jingle_locale:Language
+jingle_single:Single jingle by default
+jingle_settings_restart_warning:Some settings you have changed will be activated after restarting the program.
+jingle_search_results:Search results
+jingle_search:Search
+
+jingle_keyboard_layout:Keyboard layout
+jingle_keyboard_layout_qwerty:QWERTY
+jingle_keyboard_layout_qwertz:QWERTZ
+jingle_keyboard_layout_azerty:AZERTY
+jingle_keyboard_layout_dvorak:Dvorak
+jingle_key_jingle:Jingle key
+jingle_key_ctrl:Ctrl
+jingle_key_shift:Shift
+jingle_key_up:Up
+jingle_key_down:Down
+jingle_key_ctrl_description:Stop other jingles + 
+jingle_key_shift_description:Stop jingle + 
+jingle_key_down_description:Fade out jingle + 
+jingle_key_up_description:Fade in jingle + 
+
+jingle_connector:Input/output
+jingle_connector_osc:Input/output over OSC (OpenSound Control)
+jingle_connector_enabled:Enable input/output
+jingle_connector_osc_enabled:Enable
+jingle_connector_osc_address:OSC-address
+jingle_connector_osc_port:OSC-port

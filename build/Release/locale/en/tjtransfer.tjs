@@ -1,0 +1,6 @@
+transfer_plugin_friendly_name:File transfer
+transfer_plugin_description:Using the file transfer plug-in, you can transfer files from one TJShow client to another
+transfer_cue_time:Time
+transfer_cue_rid:File name
+transfer_type_name:Transfer
+transfer_help_text:Right-click here to create transfer cues

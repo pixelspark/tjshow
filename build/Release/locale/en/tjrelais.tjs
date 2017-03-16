@@ -1,0 +1,10 @@
+relais_plugin_description:The TJRelais plug-in can drive the TJRelais switchbox.
+relais_plugin_friendly_name:Switch
+relais_pin:Pin
+relais_device:Device
+relais_color:Color
+relais_block_begin_time:Start (time)
+relais_block_length:Length (time)
+relais_device_unknown_device:[Unknown]
+relais_endpoint:Switch
+relais_track_hint:Right-click on this track to create switching blocks

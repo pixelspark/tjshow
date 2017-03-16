@@ -1,0 +1,54 @@
+midi_input_friendly_name:MIDI invoer-ondersteuning
+midi_input_description:MIDI invoerrapparaten kunnen gebruikt worden om shows te bedienen en te beinvloeden.
+
+midi_category:MIDI
+midi_cc_plugin_friendly_name:MIDI CC
+midi_cc_plugin_description:Met MIDI CC kunt u 'control change' berichten gebruiken, om parameters van apparaten aan te passen via MIDI.
+midi_cc_track_height:Hoogte
+midi_cc_channel:Kanaal
+midi_cc_control:Control
+midi_cc_control_group_name:MIDI
+midi_cc_device:Apparaat
+midi_cc_wrong_device:Er is een incompatibel apparaat gepatched (kies een MIDI-apparaat)
+
+midi_mmc_plugin_friendly_name:MIDI MMC
+midi_mmc_plugin_description:Met MMC (MIDI Machine Control) kunt u apparaten, zoals tape-decks, aansturen middels start/stop/zoek commando's.
+midi_mmc_output_device:Apparaat
+midi_mmc_channel:Device ID
+midi_mmc_device_id:Device ID
+
+midi_msc_plugin_friendly_name:MIDI MSC
+midi_msc_plugin_description:Met MSC (MIDI Show Control) kunt u apparaten aansturen die geschikt zijn voor MSC-commando's
+midi_msc_output_device:Apparaat
+midi_msc_device_id:Apparaat-ID
+midi_msc_command_format:Commando-formaat
+midi_msc_cue_send:MSC Cue zenden
+midi_msc_cue_time:Tijd
+midi_msc_cue_description:Omschrijving
+midi_msc_cue_command:Commando
+midi_msc_empty_hint:Klik hier rechts om commando-cues toe te voegen
+midi_msc_cue:MSC Cue
+midi_msc_cue_number:Nummer
+midi_msc_cue_list:Cuelist
+midi_msc_cue_path:Pad
+midi_msc_default_cue_list:Standaard cuelist
+midi_msc_default_cue_path:Standaard cue-pad
+midi_msc_cues:MSC cues
+midi_msc_use_track_default:Zelfde als spoor
+
+midi_voice_plugin_friendly_name:MIDI Kanaal
+midi_voice_plugin_description:Met een MIDI-kanaal kunt u Voice-specifieke berichten (zoals Note On, Note Off, Program Change) verzenden naar een MIDI-apparaat.
+midi_voice_channel:Kanaal
+midi_voice_program_change:Program Change (PC)
+midi_voice_empty_hint:Klik hier rechts om noten toe te voegen
+midi_voice_program:Program
+midi_voice_output_device:Apparaat
+midi_voice_note:Note
+midi_voice_note_on:Note On
+midi_voice_note_off:Note Off
+midi_voice_note_id:Noot
+midi_voice_note_velocity:Velocity
+midi_voice_notes_off_on_stop:Note-off bij stoppen
+midi_voice_view_preferences:Weergave-opties
+midi_voice_show_note_names:Noot-namen (GM) weergeven
+midi_serial_out_device:MIDI over seriële poort 

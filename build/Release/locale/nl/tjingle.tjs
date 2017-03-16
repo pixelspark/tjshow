@@ -1,0 +1,61 @@
+jingle_application_name:TJingle
+jingle_about:Over
+jingle_user_interface:Bediening
+jingle_effects:Effecten inschakelen
+jingle_file_menu:Bestand
+jingle_device:Geluidskaart (nummer)
+jingle_file_exit:Afsluiten
+jingle_windows_menu:Vensters
+jingle_log:Logvenster weergeven...
+jingle_properties_description:Eigenschappen van deze collectie...
+jingle_collection_name:Collectienaam
+jingle_file:Bestand
+jingle_open:Jingle toewijzen aan knop
+jingle_preload:Jingles voorladen voor snel starten
+jingle_import_dir:Map invoegen...
+jingle_new:Nieuwe jingle-set
+jingle_save:Jingle-set opslaan
+jingle_open:Jingle-set openen
+jingle_open_jingle:Jingle toewijzen...
+jingle_fade_in:Jingle infaden
+jingle_fade_out:Jingle uitfaden
+jingle_play:Jingle afspelen
+jingle_stop:Jingle stoppen
+jingle_stop_all:Alle jingles stoppen (op deze pagina)
+jingle_stop_all_global:Alle jingles stoppen
+jingle_play_random:Start willekeurige jingle (van deze pagina)
+jingle_file_new:Nieuwe jingle-set
+jingle_file_open:Open jingle-set...
+jingle_file_save:Jingle-set opslaan...
+jingle_open_set:Jingle-set openen
+toolbar_theme:Kleurenschema kiezen...
+jingle_settings:Instellingen...
+jingle_single:Standaard 1 jingle tegelijk
+jingle_locale:Taal
+jingle_properties_change:Gegevens
+jingle_search_results:Zoekresultaten
+jingle_settings_restart_warning:Sommige instelling die je hebt veranderd worden pas actief na het opnieuw opstarten van het programma.
+jingle_search:Zoeken
+
+jingle_keyboard_layout:Toetsenbord-layout
+jingle_keyboard_layout_qwerty:QWERTY
+jingle_keyboard_layout_qwertz:QWERTZ
+jingle_keyboard_layout_azerty:AZERTY
+jingle_keyboard_layout_dvorak:Dvorak
+jingle_key_jingle:Jingle-toets
+jingle_key_ctrl:Ctrl
+jingle_key_shift:Shift
+jingle_key_up:Up
+jingle_key_down:Down
+jingle_key_ctrl_description:Stop andere jingles + 
+jingle_key_shift_description:Stop jingle + 
+jingle_key_down_description:Fade out jingle + 
+jingle_key_up_description:Fade in jingle + 
+
+
+jingle_connector:Invoer/uitvoer
+jingle_connector_osc:Invoer/uitvoer via OSC
+jingle_connector_enabled:Invoer/uitvoer inschakelen
+jingle_connector_osc_enabled:Inschakelen
+jingle_connector_osc_address:OSC-adres
+jingle_connector_osc_port:OSC-poort

@@ -1,0 +1,30 @@
+data_plugin_description:Met een data-spoor kunnen gegevens uit een database worden gebruikt in een show.
+data_plugin_friendly_name:Data
+data_category:Databases/externe gegevens
+data_choose_database:Kies database-bestand
+data_track_empty_text:Er zijn nog geen queries op deze tijdbalk. Klik rechts om een query toe te voegen.
+data_cue_time:Tijd
+data_query:Query
+data_database_file:Database-bestand
+data_tuple_outlet:Rij gegevens
+data_row_number_outlet:Huidige rij (nummer)
+data_has_next_outlet:Volgende rij aanwezig (ja/nee)
+data_live_group:Data
+data_query_execute:Query uitvoeren
+data_options:Database-opties
+data_open_database:Database openen...
+data_create_database:Nieuwe database maken...
+data_save_database:Database opslaan als...
+data_query_hint:Voer hier een database-query in (SQL)
+data_query_history:Query-geschiedenis
+
+data_export:Gegevens exporteren
+data_export_question:Vul de parameters in en klik op 'OK' om te exporteren
+data_export_database:Resultaten exporteren...
+data_export_format:Formaat
+data_export_file:Bestand
+data_export_field_separator:Scheidingsteken(s) velden
+data_export_line_separator:Scheidingsteken(s) rijen
+data_export_field_begin:Veld beginnen met
+data_export_field_end:Veld eindigen met
+data_export_column_names:Kolomnamen invoegen

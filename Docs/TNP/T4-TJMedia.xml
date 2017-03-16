@@ -1,0 +1,64 @@
+<?xml version='1.0' ?>
+<?xml-stylesheet type="text/xsl" href="protocol.xsl" ?>
+
+<protocol name="TNP-TJMedia" version="3">
+  <types>
+    <type name="ImageStreamPlayerMessage" size="4">
+      <value name="KMessageLoad" id="1" />
+      <value name="KMessageHide" id="2" />
+      <value name="KMessageUpdate" id="3" />
+      <value name="KMessageLoadText" id="4" />
+    </type>
+    
+    <type name="PatchIdentifier">
+      Variable size string; first unsigned integer declares the length, then the individual characters follow (as 16-bit wide characters). Identifies a patch.
+    </type>
+    
+    <type name="Pixels" size="4">
+      Size of something in pixels (which is 1/72 inch by default)
+    </type>
+  </types>
+
+  <units>
+    <unit name="Packet">
+      <field name="Action" type="ImageStreamPlayerMessage"></field>
+      
+      <unit name="Payload">
+        <choice>
+          <option>
+            <when field="Action" in-unit="Packet"><value name="KMessageLoad"/></when>
+            <field name="Text" type="wstring">The text to display (variables already parsed on the master)</field>
+            <field name="Screen" type="PatchIdentifier">The screen to display the text on</field>
+          </option>
+          
+           <option>
+            <when field="Action" in-unit="Packet"><value name="KMessageHide"/></when>
+          </option>
+          
+           <option>
+            <when field="Action" in-unit="Packet"><value name="KMessageUpdate"/></when>
+            
+            <field name="Opacity" type="float" size="4">The new opacity</field>
+            <field name="Translate" type="Vector">Translation</field>
+            <field name="Rotate" type="Vector">Rotation</field>
+            <field name="Scale" type="Vector">Scaling</field>
+          </option>
+          
+           <option>
+            <when field="Action" in-unit="Packet"><value name="KMessageLoadText"/></when>
+            
+            <field name="Width" type="Pixels">The width of the image, in pixels</field>
+            <field name="Height" type="Pixels">The height of the image, in pixels</field>
+            <field name="FontSize" type="Pixels">Size of the font, in pixels</field>
+            <field name="ShowBorder" type="unsigned int" size="4">Show a border around the text or not</field>
+            <field name="ColorR" type="double" size="4">Red component of the text color</field>
+            <field name="ColorG" type="double" size="4">Green component of the text color</field>
+            <field name="ColorB" type="double" size="4">Blue component of the text color</field>
+            <field name="Text" type="wstring">The text to display (variables already parsed on the master)</field>
+            <field name="Screen" type="PatchIdentifier">The screen to display the text on</field>
+          </option>
+        </choice>
+      </unit>
+    </unit>
+  </units>
+</protocol>

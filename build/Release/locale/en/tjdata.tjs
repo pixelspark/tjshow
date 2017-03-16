@@ -1,0 +1,29 @@
+data_plugin_description:With a data track, you can retrieve and store information in a database and use it in the show.
+data_plugin_friendly_name:Data
+data_category:Databases
+data_choose_database:Choose database file
+data_track_empty_text:No query-cues have been added. Right-click here to add a query-cue.
+data_cue_time:Time
+data_query:Query
+data_database_file:Database file
+data_tuple_outlet:Row data
+data_row_number_outlet:Current row (number)
+data_has_next_outlet:Next row present (yes/no)
+data_live_group:Data
+data_query_execute:Execute query
+data_options:Database options
+data_open_database:Open database...
+data_create_database:Create new database...
+data_save_database:Save database as...
+data_query_hint:Type a database query here in SQL (structured query language)
+data_query_history:Query history
+data_export:Export data
+data_export_question:Enter the export parameters
+data_export_database:Export results...
+data_export_format:Format
+data_export_file:File
+data_export_field_separator:Field separator
+data_export_line_separator:Row separator
+data_export_field_begin:Start fields with
+data_export_field_end:End fields with
+data_export_column_names:Insert column names

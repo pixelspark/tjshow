@@ -1,0 +1,15 @@
+/build/Intermediate
+/Core/TJDB/Debug/BuildLog.htm
+/Core/TJDB/Debug/*.idb
+/Core/TJDB/Debug/*.pdb
+/Core/TJDB/TJDBFramework.xcodeproj/*.pbxuser
+/Core/TJDB/TJDBFramework.xcodeproj/*.perspectivev3
+/Core/TJDMXEngine/Debug
+/Core/TJDMXEngine/*.user
+*.user
+*.pdb
+*.pbxuser
+*.perspectivev3
+*.idb
+BuildLog.htm
+*.ncb

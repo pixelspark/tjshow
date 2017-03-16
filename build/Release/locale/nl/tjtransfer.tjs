@@ -1,0 +1,6 @@
+transfer_plugin_friendly_name:Bestanden-transfer
+transfer_plugin_description:Met de bestanden-downloader kunnen bestanden over het netwerk worden gekopieerd terwijl de show afspeelt, waarna ze direct in de show kunnen worden gebruikt.
+transfer_cue_time:Tijd
+transfer_cue_rid:Bestandsnaam
+transfer_type_name:Transfer
+transfer_help_text:Klik rechts op dit spoor om transfer-cues te maken

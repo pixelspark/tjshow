@@ -1,0 +1,129 @@
+dmx_artnet_universe_in:Universe
+dmx_artnet_universe_out:ArtNet universe
+dmx_artnet_universe_count:Aantal universes
+dmx_artnet_port:Poort
+dmx_artnet_address:Adres
+dmx_artnet_universe:ArtNet universe 
+dmx_artnet_universes:Artnet universes 
+dmx_address_hint:
+dmx_artnet_input:Universes
+dmx_artnet_output:ArtNet
+
+dmx_category:DMX
+dmx_color_plugin_friendly_name:DMX Kleur
+dmx_color_plugin_description:Met een DMX Kleur-spoor kunnen lampen met instelbare kleuren worden bediend.
+dmx_color_track_type:DMX Kleur
+dmx_color_hue:Tint
+dmx_color_saturation:Verzadig
+dmx_color_value:Helderheid
+
+dmx_color_red_address:Rood (adres)
+dmx_color_green_address:Groen (adres)
+dmx_color_blue_address:Blauw (adres)
+dmx_color_cyan_address:Cyaan (adres)
+dmx_color_magenta_address:Magenta (adres)
+dmx_color_yellow_address:Geel (adres)
+dmx_color_hue_address:Tint (adres)
+dmx_color_saturation_address:Verzadiging (adres)
+dmx_color_value_address:Helderheid (adres)
+
+dmx_change_controller_settings:Algemene DMX-instellingen...
+dmx_controller_settings:Algemene DMX-instellingen
+dmx_controller_settings_question:Hier kunt u instellingen opgeven die voor alle DMX-kanalen gelden
+
+dmx_display_float:Weergeven als percentage (0..100)
+dmx_display_byte:Weergeven als byte (0..255)
+dmx_display_word:Weergeven als word (0..65535)
+dmx_display_hex:Weergeven als hexadecimaal (00..FF)
+
+dmx_device_name:Naam
+dmx_device_enabled:Actief
+dmx_device_info:Informatie
+dmx_device_serial:Serienummer
+dmx_device_port:Poort
+dmx_device_universe_count:#Universes
+dmx_device_universes:Universes
+dmx_device_universe_in:Universe (in)
+
+dmx_plugin_friendly_name:DMX
+dmx_plugin_description:De DMX-plugin kan gebruikt worden om een enkel DMX-kanaal aan te sturen. Gebruik dit voor bijvoorbeeld parren of rookmachines die op 1 kanaal werken.
+trackspot_plugin_friendly_name:DMX Trackspot
+trackspot_plugin_description:Met de DMX Trackspot-plugin kun je trackspots van het merk High End aansturen.
+dmx_address:DMX-adres
+
+dmx_device_properties:Eigenschappen van DMX-apparaat
+dmx_device_enable:DMX-apparaten in- of uitschakelen
+dmx_esp_universe:Universe
+dmx_esp_port:Poort
+dmx_esp_address:IP-adres
+dmx_esp_use_rle:Gebruik RLE compressie
+dmx_endpoint:DMX-waarde
+
+dmx_lanbox_address:IP-adres
+dmx_lanbox_port:Poort
+dmx_lanbox_universe_in:Universe (in)
+
+dmx_reset_on_stop:Reset bij stoppen
+dmx_track_set_address_first:Stel eerst een DMX-adres in
+dmx_track_height:Hoogte
+dmx_track_expanded:Uitgeklapt
+
+dmx_settings_patches:Patches
+dmx_settings_devices:Apparaten
+dmx_switching_channels:Switch-kanalen
+dmx_patch_col_name:Naam
+dmx_patch_col_type:Type
+dmx_patch_col_tnp:@TJ
+dmx_patch_col_dmx:@DMX
+dmx_patch_col_reset:Reset bij stoppen
+dmx_patch_empty_text:Er zijn nog geen DMX-sporen in deze show. Voeg een DMX-spoor toe aan een tijdbalk om DMX-kanalen te kunnen gebruiken.
+dmx_patch_remove_all:Verwijder alle patches
+dmx_patch_auto:Automatisch patchen
+dmx_patchset_save:Patch-set opslaan...
+dmx_patchset_load:Patch-set laden...
+dmx_patchset_file:Kies patch-set
+
+dmx_position_friendly_name:DMX Positie
+dmx_position_description:Een DMX Positie-spoor kan twee DMX-kanalen bedienen alsof het een positie is.
+dmx_position_pan_address:Pan-adres (DMX)
+dmx_position_tilt_address:Tilt-adres (DMX)
+tilt:Tilt
+pan:Pan
+dmx_trackspot_editor_title:Pad
+dmx_trackspot_edit_path:Pad...
+dmx_trackspot_editor_delete_all:Alles verwijderen
+dmx_trackspot_editor_time_none:Geen tijden weergeven
+dmx_trackspot_editor_time_ms:Tijden in ms weergeven
+dmx_trackspot_editor_time_formatted:Tijden volledig weergeven
+dmx_trackspot_editor_time_sequential:Alleen volgorde weergeven
+dmx_universe_count:Aantal universes
+dmx_viewer_save_image:Opslaan als afbeelding...
+dmx_viewer:DMX Viewer
+dmx_viewer_plugin_description:Met de DMX Viewer kun je een plattegrond tekenen van een show en daar DMX-kanalen in laten zien.
+dmx_viewer_default_rotation:Standaardrichting
+dmx_viewer_background_color:Achtergrondkleur
+dmx_settings:DMX
+fixture_add:Lamp toevoegen...
+fixture_color:Kleur
+fixture_remove:Geselecteerde items verwijderen  Del
+fixture_duplicate:Geselecteerde items dupliceren    Ctrl-D
+fixture_rotation:Rotatie
+fixture_settings:Eigenschappen...
+fixture_size:Grootte
+fixture_type_default:Rond
+fixture_type_square:Vierkant
+fixture_type_pc:PC
+fixture_type_pc_top:PC (top)
+fixture_type_par:Par 56
+fixture_type_par_64:Par 64
+fixture_type_text:Tekst
+fixture_type_fresnel:Fresnel (CIE)
+fixture_type_horizon:Horizon (CIE)
+fixture_type_cie_par_short:Par Short (CIE)
+fixture_type_cie_par_64:Par 64 (CIE)
+fixture_type_cie_pc:PC (CIE)
+fixture_type_cie_profile:Profiel (CIE)
+fixture_type:Type
+fixture_text:Tekst
+fixture_x:X-coordinaat
+fixture_y:Y-coordinaat

@@ -1,0 +1,62 @@
+osc_argument_type:Type
+osc_argument_value:Value
+osc_argument_description:Description
+osc_arguments:Arguments
+osc_argument_add:Add argument
+osc_argument_remove:Remove argument
+osc_argument_up:Move argument up
+osc_argument_down:Move argument down
+osc_argument_type_nil:Nil
+osc_argument_type_true:Boolean (standaard true)
+osc_argument_type_false:Boolean (standaard false)
+osc_argument_type_double:Decimal (double)
+osc_argument_type_float:Decimal (float)
+osc_argument_type_string:string
+osc_argument_type_int32:Integer (32-bits)
+osc_argument_type_int64:Integer (64-bits)
+osc_argument_type_infinitum:Infinitum
+osc_argument_type_char:Byte (0..255)
+osc_argument_type_color:Color (RGBA)
+osc_argument_type_midi:MIDI command
+osc_argument_type_time:Time
+osc_argument_type_blob:Blob
+osc_argument_type_symbol:Symbol
+osc_argument_type_unknown:[Unknown]
+osc_category:OSC
+osc_cue_time:Time
+osc_devices:Connections
+osc_cue_description:Description
+osc_input_friendly_name:OSC input
+osc_input_description:With OSC input, you can use the OpenSound Control (OSC) protocol to send input to TJShow.
+osc_input_settings:OSC
+osc_input_devices:Input
+osc_input_device_id:ID
+osc_input_device_name:Name
+osc_input_device_type:Type
+osc_input_device_description:Description
+osc_input_no_devices:No OSC input-devices have been defined. Click '+' to define a device.
+osc_input_device_add:Add OSC input-device
+osc_input_device_add_question:Change the details for the device below
+osc_input_device_remove:Remove selected input device
+osc_input_device_remove_warning:By removing this OSC device, all patches referring to this device will be unpatched. Are you sure you want to remove this input device?
+osc_udp_address:UDP-address
+osc_udp_address_any:All UDP addresses
+osc_udp_port:port
+osc_udp_transport_device:OSC-over-UDP
+osc_device_properties:Properties
+osc_device_properties_question:Change the details for the device below
+osc_output_plugin_friendly_name:OSC Output
+osc_output_plugin_description:Using an OSC output track, you can send OSC commands to devices and software that supports OSC.
+osc_output_device:OSC device
+osc_output_track_empty_text:No OSC-cues have been added to this track; right click here to create a cue.
+osc_no_arguments:(None)
+osc_path_prefix:Path prefix
+osc_default_path:Default action
+osc_message_path:Action (path)
+osc_message:OSC command
+osc_device_direction:Direction
+osc_device_direction_in:Inbound
+osc_device_direction_out:Outbound
+osc_device_direction_in_tag:In
+osc_device_direction_out_tag:Out
+osc_device_direction_both:Both (full-duplex)

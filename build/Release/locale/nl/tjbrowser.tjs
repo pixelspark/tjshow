@@ -1,0 +1,9 @@
+browser_plugin_friendly_name:Browser
+browser_plugin_description:De browser-plugin kan webpagina's laten zien op TJShow-clients. Gebruik dit voor displays, zoals bijvoorbeeld het aangeven van de tijden waarop de show begint.
+browser_url:URL
+browser:Browser
+browser_hide_on_stop:Verberg Na Stoppen
+browser_help_text:Er zijn geen cues op dit spoor. Klik rechts om een cue te maken.
+browser_cue_time:Tijd
+browser_monitor:Beeldscherm
+ui_category:Gebruikers-interface

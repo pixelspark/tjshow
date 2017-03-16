@@ -1,0 +1,69 @@
+yes:Ja
+no:Nee
+resource_not_found:Bestand niet gevonden: 
+theme_bright:Licht
+theme_default:Donker
+theme_vista:Vista
+file_load_failed:Kon het bestand niet openen. Mogelijk bestaat het bestand niet, heeft u geen rechten het bestand te openen of is het bestand beschadigd of in een verkeerd formaat.
+file_format_invalid:Het bestand kon niet worden geladen. Losse sporen (ttx-bestanden) kunnen alleen toegevoegd worden aan een bestaande tijdbalk. Als u een show-bestand probeerde te openen, is deze mogelijk beschadigd.
+graph_item_hide:Verbergen
+file_property_manual_entry:Handmatige invoer
+endpoint_unknown:[Onbekend]
+ok:OK
+search_banner:Zoeken...
+tab_no_orphans:Er zijn geen vensters om toe te voegen
+type_null:Null
+type_string:Tekst
+type_integer:Geheel getal
+type_double:Kommagetal
+type_bool:Boolean (waar/onwaar)
+type_object:Object
+type_tuple:Tupel
+locale:Taal
+copy:Kopiëren
+paste:Plakken
+cut:Knippen
+toolbar_tip:Tips & trucs
+
+key_up:Omhoog
+key_down:Omlaag
+key_ctrl:Ctrl
+key_shift:Shift
+key_alt:Alt
+key_delete_selection:Verwijder selectie
+key_delete_item:Verwijder item
+key_delete:Del
+key_insert:Ins
+key_home:Home
+key_return:Enter
+key_space:Spatie
+key_end:End
+key_escape:Esc
+key_backspace:Backspace
+
+key_home_slider:0%
+key_end_slider:100%
+
+month_january:januari
+month_february:februari
+month_march:maart
+month_april:april
+month_may:mei
+month_june:juni
+month_july:juli
+month_august:augustus
+month_september:september
+month_october:oktober
+month_november:november
+month_december:december
+
+day_monday:maandag
+day_tuesday:dinsdag
+day_wednesday:woensdag
+day_thursday:donderdag
+day_friday:vrijdag
+day_saturday:zaterdag
+day_sunday:zondag
+
+undo:Ongedaan maken
+redo:Niet ongedaan maken

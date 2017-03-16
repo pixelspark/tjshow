@@ -1,0 +1,612 @@
+
+application_name:TJShow
+add_track_from_file:Spoor toevoegen uit bestand...
+add_empty_track:Nieuw spoor toevoegen
+advanced:Geavanceerd
+assignments:Wijzigingen
+assignment_add:Statement toevoegen...
+assignment_remove:Verwijderen
+assignment_up:Omhoog
+assignment_down:Omlaag
+ui_font:Tahoma
+address:Adres
+battery_low:Lage accuspanning!
+background_image:Achtergrond
+browser_web_client:Browser
+
+capacities:Vergrendeling
+capacities_list:Lijst
+capacities_graph:Model
+capacities_graph_rebuild:Model opnieuw opbouwen
+capacities_graph_clear:Model leegmaken
+capacities_graph_hide_all:Alles verbergen
+capacities_graph_save_image:Afbeelding opslaan
+capacity_add:Vergrendeling toevoegen
+capacity_remove:Vergrendeling verwijderen
+capacity_remove_confirm:Weet u zeker dat u deze vergrendeling wilt verwijderen?
+capacity_name:Naam
+capacity_description:Omschrijving
+capacity_initial:Beginwaarde
+capacity_value:Vrij
+capacity_waiting_unknown:[Onbekend]
+capacity_untitled:Nieuwe vergrendeling
+capacity_none:[Geen]
+capacity_waiting:Wachtrij
+capacity_up:Omhoog
+capacity_down:Omlaag
+capacity_reset:Vergrendeling resetten
+capacity_release:Geef vergrendeling vrij
+capacity_use:Gebruik vergrendeling
+
+change_remove_track:Spoor verwijderd
+change_add_cue:Cue toegevoegd op tijdstip 
+change_add_track:Spoor toegevoegd
+change_add_variable:Variabele toegevoegd
+change_remove_variable:Variabele verwijderd
+
+cannot_change_run_mode_while_playing:Afspeelmodi kunnen niet worden aangepast tijdens afspelen
+change_playback_speed_to:Afspeelsnelheid:
+channel_exists:Er is al een spoor die het opgegeven kanaal gebruikt. Verander het kanaal of verwijder eerst het andere spoor.
+network:Netwerk
+clients:Clients
+client_ip:IP-adres
+client_role:Rol
+client_instance:Instantiecode
+client_disconnected:Client heeft verbinding verbroken:
+client_device_count:Aantal apparaten
+client_filter:Lid van groep(en)
+client_list_empty:Er zijn geen clients of servers gevonden in het netwerk. Controleer eventueel uw netwerk-instellingen.
+client_mac_address:MAC-adres
+client_wake:Client opstarten (via Wake on LAN)
+client_no_cached:Geen clients herinnerd
+
+dashboard:Dashboard
+dashboard_widget_add:Widget toevoegen
+dashboard_design:Dashboard aanpassen
+dashboard_widget_remove:Widget verwijderen
+dashboard_widget_label:Label
+dashboard_widget_label_text:Label-tekst
+dashboard_widget_label_position:Label-positie
+dashboard_widget_label_position_bottom:Onder widget
+dashboard_widget_label_position_right:Rechts van widget
+dashboard_empty:Het dashboard is nog leeg. Voeg meters of knoppen toe door rechts te klikken.
+
+track_already_has_this_address:Dit spoor heeft het opgegeven adres al!
+couldnt_create_track:Er kon geen nieuw spoor worden gemaakt. Waarschijnlijk is dit een beperking in de plug-in (controleer of de plug-in het maken van meerdere sporen toestaat).
+choose_color:Kies...
+
+expression:Voorwaarde
+expression_constant:Constante
+expression_constant_type:Type
+expression_expression:Formule
+expression_expression_question:Vul hier de voorwaarde in als formule
+expression_field:Veld uit tupel
+expression_arithmetic:Wiskundig...
+expression_logic:Logica...
+expression_nullary:Waarde
+expression_change_constant:Stel waarde in...
+expression_change_function:Kies waarde...
+expression_variable:Variabele
+expression_op_add:+	Optellen 
+expression_op_subtract:-	Aftrekken
+expression_op_multiply:*	Vermenigvuldigen
+expression_op_divide:/	Delen
+expression_op_modulo:%	Modulo (rest)
+expression_op_greater:>	Groter dan
+expression_op_smaller:<	Kleiner dan
+expression_op_equals:=	Is gelijk aan
+expression_op_not_equals:!=	Is niet gelijk aan
+expression_op_or:||	Logische of
+expression_op_and:&&	Logische en
+expression_op_xor:^^	Logische exclusieve of
+expression_op_negate:!	Logische negatie
+expression_op_negate_number:-	Teken omkeren
+expression_op_abs:|	Absolute waarde
+expression_op_field:->	Veld in tupel
+expression_op_sin:sin	Sinus
+expression_op_cos:cos	Cosinus
+expression_op_tan:tan	Tangens
+expression_op_asin:asin	Inverse sinus
+expression_op_acos:acos	Inverse cosinus
+expression_op_atan:atan	Inverse tangens
+expression_op_sqrt:sqrt	Wortel
+expression_op_log:log	Log 10
+
+expression_remove_term:Deze term verwijderen
+expression_change_variable:Variabele veranderen...
+expression_no_variable:Geen variable
+expression_choose_variable:Variabele
+expression_string:Tekst
+enable_ep_endpoint:Besturing op afstand toestaan
+
+com_initialization_failed:COM kon niet worden geinitialiseerd. COM wordt niet gebruikt door TJShow zelf, maar mogelijk wel door plug-ins, die door deze fout wellicht niet meer goed werken.
+confirm_remove_track:Weet u zeker dat u dit spoor wilt verwijderen? Als het spoor eenmaal verwijderd is, zijn er geen mogelijkheden dit spoor terug te krijgen.
+confirm_new:Weet u zeker dat u met een nieuw bestand wilt beginnen? Alle gegevens in het huidige bestand worden niet opgeslagen.
+confirm_remove_all_cues:Weet u zeker dat u alle cues wilt verwijderen? Er is na verwijderen geen mogelijkheid meer om de cues terug te halen!
+
+controller_started_time: Gestart: 
+controller_stopped_time: Gestopt: 
+controller_late_initialization:Bepaalde sporen werden te laat gestart, omdat ze niet op tijd klaar waren met initialiseren
+
+could_not_load_track_from_file:Kon een of meerdere sporen uit het bestand niet laden. Controleer of de vereiste plug-ins aanwezig zijn. Mogelijk is het bestand beschadigd. Let op: sla het bestand nu niet op als u de beschadigde sporen wil behouden!
+
+cue:Cue
+cues:Cues
+
+cue_bind_to_input:Koppelen aan invoer...
+cue_description:Omschrijving
+cue_description_header:Extra informatie
+cue_dont_jump:
+cue_actions:Gedrag
+cue_advanced:Geavanceerd
+cue_allow_waiting:Wachten toestaan
+cue_distant_property:Trigger
+cue_distant_none:[Geen]
+cue_name:Naam
+cue_nameless:[Naamloze cue]
+cue_time:Tijd
+cue_jump:Spring Naar
+cue_color:Kleur
+cue_add:Cue toevoegen
+cue_action:Actie
+cue_action_none:Geen
+cue_action_start:Start afspelen
+cue_action_stop:Stop afspelen
+cue_action_pause:Pauzeer afspelen
+cue_script:Script
+cue_press_ctrl_to_move:Druk op Ctrl om cue te verplaatsen, Shift om te schuiven
+cue_view_settings:Weergave-opties
+cue_capacity_size:Capaciteitsgrootte
+cue_take_capacity:Gebruik
+cue_release_capacity:Geef vrij
+cue_private:Niet triggerbaar
+cue_next_unknown:Geen volgende cue aanwezig
+cue_next_continue:Ga verder
+cue_expression_type_wait:Wacht tot aan voorwaarde is voldaan
+cue_expression_type_skip:Cue overslaan indien niet aan voorwaarde is voldaan
+cue_expression_type_pause:Tijdbalk pauzeren indien niet aan voorwaarde is voldaan
+cue_expression_type:Opties voorwaarde
+
+cuelist_show_nameless:Cues zonder naam laten zien
+cuelist_only_show_play_cues:Alleen start-cues laten zien
+command_line_help_title:TJShow: Argumenten voor uitvoeren
+command_line_help:tjshow.exe M [bestand om te openen] of tjshow.exe C [adres]
+
+debug:Debug
+default_track_height:Spoorhoogte
+delete_track:Verwijder spoor
+delete_cue:Verwijder cue
+device_identifier:Apparaat-identifier
+device_client_identifier:Apparaat-identifier (op client)
+duplicate_track:Dupliceer spoor
+detach_tab:Tabblad losmaken
+doubly_used_channels:De volgende kanalen worden door meer dan een spoor gebruikt: 
+demote:Aftreden als primaire server
+
+effect_none:Geen
+effect_volume:Volume
+effect_alpha:Transparantie
+effect_gamma:Gamma
+
+enable_sticky_faders:Sticky faders
+enable_timeline_tooltips:Tooltips in tijdbalk
+enable_resource_warnings:Waarschuwen bij ontbrekend bestand
+enable_noclient_warnings:Waarschuwen bij onjuiste addressering
+enable_animations:Animaties inschakelen
+execute_command_queue:Opdrachten uitvoeren
+exit_still_playing:Er zijn nog tijdbalken aan het afspelen. U kunt het programma alleen afsluiten of een nieuwe show starten als alle tijdbalken eerst worden gestopt. Wilt u deze tijdbalken stoppen?
+error:Fout
+error_unknown:Er is een onbekende fout opgetreden (mogelijk in een plug-in).
+error_timed_thread_crashed:Een spoor is gecrashed. Dit is mogelijk een fout in de plug-in die het spoor aanbiedt. Het is aanbevolen om je werk op te slaan en het hele programma opnieuw op te starten.
+error_on_client:Fout op client 
+error_in_streamplayer_creation:Kon plug-in op client niet starten op kanaal 
+error_create_patches_before_binding:Er zijn nog geen patches gemaakt. Met een patch kunnen apparaten worden aangewezen. Maak eerst een patch (om een invoerapparaat op aan te sluiten) om invoer te kunnen koppelen.
+error_patch_must_have_name:Je hebt geen naam ingevuld voor de patch.
+error_plugin_not_found_for_track:Het volgende spoor kon niet worden geladen, omdat de plug-in niet aanwezig is: 
+
+event_log:Meldingen
+event_read:
+event_date:Tijd
+event_message:Melding
+event_type:Type
+event_list_empty_text:Er zijn op dit moment geen meldingen.
+
+fader_data:Fader data
+fader_data_question:Wijzig hieronder de faderpunten door de data te bewerken.
+fader_data_label:Data
+fader_data_change:Bewerken
+faders_choose:Faders
+faders_choose_hint:Kiezen
+features:Features
+feature_unknown:Onbekend
+feature_ac_power:Netspanning
+feature_backup_power:Reservespanning
+feature_battery_power:Batterij-spanning
+feature_file_server:Bestandenserver
+feature_primary_master:Primaire server
+feature_automatic_failover:Failover
+
+groups:Groepen
+groups_none_defined:Er zijn nog geen groepen gedefiniëerd.
+group_add_dialog:Groep toevoegen
+group_add_dialog_question:Maak een groep om clients te groeperen
+group_all:Alle clients
+group_add:Groep toevoegen...
+group_remove:Groep verwijderen
+group_id:ID
+group_name:Groepsnaam
+group_color:Groepskleur
+group_list_empty_text:Er zijn nog geen groepen gedefiniëerd. Klik op '+' om een groep te maken.
+go_to_time:Ga naar tijd...
+hostname:Computernaam
+import_warning:Let op: door een bestand te importeren wordt de inhoud van dat bestand toegevoegd aan dit bestand. Weet u zeker dat u dit wilt doen?
+import_select_file:Selecteer bestand om te importeren
+insert_from_control:Waarde van control invoegen
+item:Item
+input_details:Invoer-parameters
+input_device_id:ID
+input_device_name:Apparaat
+input_channel_id:ID
+input_channel_endpoint:Gekoppeld aan
+input_channel_list_empty_text:Klik een apparaat aan in de lijst links om hier de kanalen te bekijken.
+input_detach_selected:Geselecteerde invoer-regel verwijderen
+input_detach_all:Alle invoer-regels verwijderen
+input_attach:Invoer koppelen met invoer-regel...
+input_attach_question:Kies een apparaat en kanalen om te koppelen met invoer-regel
+input_patch:Apparaat
+input_channel_id:Kanaal
+input_endpoint:Eindpunt
+
+instancer_name:Instantie
+instancer_description:Met een instantie-spoor kun je een andere tijdbalk meerdere keren tegelijk afspelen
+instancer_cue_time:Tijd
+instancer_no_cues:Er zijn nog geen cues toegevoegd. Klik rechts om cues toe te voegen.
+instancer_no_timeline:[Geen]
+instancer_timeline:Tijdbalk
+instancer_cue_none:[Geen]
+instancer_target_cue:Doel-cue
+instancer_cannot_change_timeline:De tijdbalk van deze instantie kan niet worden veranderd, omdat deze op dit moment wordt afgespeeld.
+instancer_change_timeline_warning:Door het veranderen van de keuze voor de tijdbalk, zullen alle cues op het instantiespoor worden verwijderd. Dit kan niet ongedaan worden gemaakt; weet je zeker dat je de tijdbalk wilt veranderen?
+instancer_input_variables:Parameters
+
+is_primary_master:Dit is de primaire server
+is_secondary_master:Dit is een secundaire server
+
+key_delete_track:Verwijder spoor
+latency_ms:Latency (ms)
+leave_full_screen:Dit venster niet meer op volledig scherm weergeven
+license_invalid:De licentie voor TJShow is ongeldig. Zonder geldige licentie kunt u het programma niet gebruiken. Neem contact op met de makers of met de partij waarbij u TJShow gekocht heeft, zodat u een geldige licentie kunt verkrijgen.
+live_wnd:Live
+live_wnd_reveal_track:Ga naar tijdbalk
+live_control_bind_to_input:Koppelen aan invoer
+live_control_endpoint:Spoor met adres 
+license_feature_disabled:De volgende functionaliteit kan niet worden gebruikt, omdat de licentie het verbiedt: 
+logger:Logboek
+lock_track:Vergrendel spoor
+local_variables:Variabelen
+multifader_enable_dialog_title:Faders in/uitschakelen
+multifader_enable_dialog_question:Kies welke faders zichtbaar en ingeschakeld moeten zijn:
+move_cue_to_now:Verplaats cue naar huidige tijd
+move_control:Verplaatsen...
+move_control_to:Verplaats naar groep:
+move_track_to:Verplaats spoor naar...
+
+model_title:Titel
+model_author:Auteur
+model_version:Versie
+model_properties:Eigenschappen
+model_notes:Beschrijving
+
+negative_channel_error:Kanaalnummers lager dan 0 zijn niet toegestaan. Kies een ander kanaalnummer.
+new_track:Nieuw spoor
+new_track_name:Nieuwe naam:
+new_channel:Nieuw kanaal:
+no_cues:Er zijn geen cues aanwezig. Cues zonder naam verschijnen mogelijk niet in deze lijst.
+no_track_selected:Selecteer eerst een spoor om te verwijderen. Het geselecteerde spoor wordt in de tijdbalk met een andere kleur weergegeven.
+no_name_given:Je hebt geen naam ingevuld voor het nieuw te maken spoor.
+no_variables_defined:Er zijn nog geen variabelen gedefinieerd
+node_demoted_passive:Deze computer is niet meer de primaire server; een andere server heeft het overgenomen
+node_demoted_active:Deze computer is niet meer de primaire server
+node_promoted:Deze computer is nu de primaire server
+
+nullary_null:Null
+nullary_hours:Uur (0..23)
+nullary_minutes:Minuten (0..59)
+nullary_seconds:Seconden (0..59)
+nullary_day_of_month:Dag in maand (1..31)
+nullary_day_of_week:Dag in week (0..6)
+nullary_name_of_month:Naam maand
+nullary_name_of_day:Naam dag
+nullary_month:Maand (1..12)
+nullary_year:Jaar
+nullary_random:Random (0..1)
+nullary_function:Functie
+nullary_pi:Pi
+nullary_euler:e (Euler)
+
+outputs:Uitvoer
+outlets:Uitvoer naar variabelen
+outlet_not_connected:(Geen)
+other_category:Overig
+open_file_select:Kies bestand...
+open_cue_list:Cuelijst tonen...
+
+paste_selection:Selectie plakken
+patch_name:Patch-naam
+patch_none:Geen apparaat
+patch_no_clients_connected:Geen clients gevonden
+patch_device:Apparaat
+patch_client_device:Apparaat (op client)
+patch_choose_client_to_edit:Kies client om patching te bewerken...
+patch_add:Patch toevoegen...
+patch_add_question:Vul de gegevens in om een nieuwe patch toe te voegen
+patch_remove:Geselecteerde patch verwijderen
+patch_no_device:Klik hier om te koppelen aan apparaat
+patches_link:Apparaten patchen...
+patches_none_defined:Er zijn nog geen apparaten gepatched
+
+player:Video
+player_thread_error:Er is een onbekende fout opgetreden bij het afspelen van een spoor. Het programma herstarten is aanbevolen.
+
+plugins:Plug-ins
+plugin_name:Naam
+plugin_module:Module
+plugin_type:Type
+plugin_author:Auteur
+plugin_version:Versie
+plugin_hash:ID
+
+port:Poort
+
+preferences:Voorkeuren
+preferences_question:Stel hier uw voorkeuren voor het programma in.
+preferences_changes_need_restart:Een aantal instellingen die u heeft gewijzigd zullen pas van toepassing zijn na het opnieuw starten van het programma.
+
+preview_properties:Eigenschappen videoscherm
+preview_properties_question:Hieronder kunt u de eigenschappen voor dit videoscherm wijzigen
+
+problem_resource_not_found:Bestand niet gevonden
+problem_channel_doubly_used:Zelfde kanaalnummer meerdere keren gebruikt
+problem_no_show_info:Informatie over de show ontbreekt
+problem_type:Probleem
+problem_description:Betreft
+problem_report:Problemen
+problem_report_for:Problemen in 
+
+promote:Start promotie tot primaire server
+promote_force:Forceer promotie tot primaire server
+promotion_in_progress:Promotie gestart...
+promote_cancel:Annuleer promotie
+
+properties:Eigenschappen
+properties_network:Netwerk
+properties_timing:Timing
+properties_preferences:Voorkeuren
+properties_other:Overig
+properties_general:Algemeen
+quit:Afsluiten
+refresh:Vernieuwen
+rediscover_devices:Zoeken naar nieuwe apparaten
+remove_items_between_range:Tijd-interval (ms):
+readdress_track:Heraddresseer spoor
+readdress_track_question:Stel een nieuw kanaal in voor dit spoor
+resources:Bestanden
+resource_script:Script
+resource_path:Bestandsnaam
+resource_location:Lokatie
+resource_remove:Uit lijst verwijderen
+resource_list_empty:Er zijn nog geen bestanden toegevoegd. Bestanden in deze lijst worden gedeeld met het hele netwerk. Druk op '+' linksboven om toe te voegen of sleep bestanden naar deze lijst.
+resource_add_file:Bestaand bestand toevoegen...
+resource_add_new:Nieuw bestand toevoegen...
+resource_remove_file:Geselecteerde bestand uit lijst verwijderen
+resource_model_not_saved:Er kunnen pas bestanden worden toegevoegd aan de bestandenlijst als de show is opgeslagen. 
+resource_open:Openen
+resource_open_in_browser:Openen (in browser)
+resource_run:Uitvoeren
+resource_open_folder:Map openen
+resource_select:Bestand selecteren
+resource_search:Bestand zoeken in netwerk...
+resource_search_hint:Voer een bestandsnaam in in het veld hierboven om te zoeken
+resource_search_title:Bestand zoeken
+resource_missing_on_client:Bestand ontbreekt op client
+resource_bundling_in_progress:Bestanden worden op dit moment gekopieerd naar de bundel; een ogenblik geduld...
+resource_bundling_done:De bundel met bestanden is klaar.
+resource_bundle_select_file:Maak of selecteer bestandsbundel
+rename_track:Hernoem spoor
+runmode:Afspeelmodus
+runmode_none:Niet afspelen
+runmode_master:Afspelen op deze server
+runmode_client:Afspelen op client(s)
+runmode_both:Afspelen op deze server en client(s)
+
+role_master:Server
+role_client:Client
+role_none:Geen Rol
+unknown_output:Onbekend uitvoertype
+unknown_client:Onbekende client
+readdress:Addressering aanpassen...
+
+resource_size:Grootte
+resources_no_missing:Alle gebruikte bestanden zijn aanwezig op deze computer. Indien er clients in het netwerk zijn, worden de bestanden op dit moment automatisch naar deze computers verzonden.
+resources_one_or_more_missing:Een of meer bestanden die worden gebruikt in de tijdbalk zijn niet gevonden. Het gaat om:
+
+enter_full_screen:Dit venster op volledig scherm weergeven
+
+screen_scale_mode:Grootte aanpassen
+scale_mode_all:Aanpassen zodat alles zichtbaar is
+scale_mode_stretch:Altijd uitrekken tot schermgrootte
+scale_mode_max:Aanpassen naar volledig beeld
+scale_mode_none:Niet aanpassen
+
+screen:Scherm
+screen_preview:Tabblad video
+screen_is_touch:Touch-screen
+screen_document_width:Breedte scene
+screen_document_height:Hoogte scene
+screen_background_color:Achtergrondkleur
+screen_show_guides:Hulplijnen tonen
+script_source:Script
+script_alert:Info
+
+save_track:Spoor opslaan...
+show_deployer:Show uitrollen
+show_deployed_successfully:Het uitrollen van de show op het netwerk is gestart. Eventueel benodigde bestanden worden op dit moment naar clients gekopieerd.
+show_deployed_with_errors:Het uitrollen van de show op het netwerk is gestart, maar de show bevat nog enkele fouten. Een overzicht van deze fouten wordt geopend zodra u op 'OK' klikt. Eventueel benodige bestanden worden nu automatisch naar clients gekopieerd.
+show_log:Logboek weergeven...
+show_notifications:Meldingen weergeven
+show:Show
+save_prompt:Wilt u de huidige show opslaan?
+save_file_select:Opslaan naar...
+search:Zoek:
+selection_remove_items:Verwijder items binnen selectie
+selection_remove_cues:Verwijder cues binnen selectie
+selection_copy_items:Kopieer items binnen selectie
+selection_paste_items:Plak selectie
+selection_zoom:Zoom naar selectie
+settings:Show-instellingen
+settings_input:Invoer
+settings_patches:Apparaten
+settings_groups:Groepen
+settings_clients:Netwerk
+settings_audio:Audio
+visible_tracks:Alle zichtbare sporen
+smooth_quality:Hoge Kwaliteit
+soundcard_id:ID
+soundcard_name:Naam
+stats_interval:Interval
+stats_drift_average_before:Gemiddelde afwijking: 
+stats_drift_average_after:ms
+stats_plugin_friendly_name:Statistieken
+stats_plugin_description:Houdt statistieken bij tijdens het afspelen van een tijdbalk.
+subnet:Subnet
+sub_timeline:Tijdbalk
+sub_timeline_description:Maak een nieuwe tijdbalk onder deze tijdbalk.
+subtimeline_block_time:Tijd
+subtimeline_block_target_cue:Doelcue
+subtimeline_block_action:Actie
+subtimeline_block_action_play:Afspelen
+subtimeline_block_action_sync:Synchroniseren
+subtimeline_block_action_stop:Stoppen
+subtimeline_no_cues:Klik rechts om cues toe te voegen die aangeven wanneer deze tijdbalk start
+show_checker:Show controleren
+show_checker_no_errors:Er werden geen fouten gevonden in deze show.
+tick_length:Tick-lengte (geavanceerd)
+time_format_ms:Tijd in milliseconden (ms) weergeven
+time_format_friendly:Tijd als kloktijd weergeven
+time_format_sequential:Tijd als volgorde weergeven
+
+timeline:Tijdbalk
+timeline_length:Lengte tijdbalk
+timeline_name:Naam
+timeline_description:Omschrijving
+timeline_stop_all:Stop tijdbalk en sub-tijdbalken
+timeline_pause_all:Stop tijdbalk en sub-tijdbalken
+timeline_resume_all:Hervat gepauzeerde tijdbalk en sub-tijdbalken
+timeline_remove_hint:(Sleep ver omlaag om te verwijderen)
+timeline_next_play_cue:Volgende start-cue starten
+timeline_no_tracks:Er zijn nog geen sporen in deze tijdbalk. Maak eerst sporen door op de '+'-knop te drukken linksboven.
+timeline_tree:Show-overzicht
+timeline_trick_zoom_text:Sleep met de rechter muisknop in de tijdschaal om in te zoomen
+timeline_trick_zoom:Zoomen
+timeline_trick_zoom_scroll:Scrollend zoomen
+timeline_trick_zoom_scroll_text:Druk de Ctrl-knop in en gebruik het scrollwieltje om te zoomen
+timeline_trick_fader_dots:Faderpunten
+timeline_trick_fader_dots_text:Sleep een faderpunt ver naar beneden om deze te verwijderen
+timeline_play:Tijdbalk afspelen
+timeline_stop:Tijdbalk stoppen
+timeline_pause:Tijdbalk pauzeren
+timeline_restart:Terug naar begin
+timeline_time:Huidige tijd
+timeline_tree_open:Uitgebreid show-overzicht...
+timeline_next_cue:Volgende cue
+timeline_previous_cue:Vorige cue
+timeline_pointer:Aanwijzer-gereedschap
+timeline_select:Selectie-gereedschap
+timeline_follow:Volg tijdbalk bij afspelen
+timeline_show_addresses:Laat groepskleuren zien bij sporen
+set_timeline_length:Lengte van tijdbalk instellen
+set_timeline_length_question:Kies een nieuwe lengte voor de tijdballk en klik op 'OK'
+timeline_shrink_warning:De ingevoerde nieuwe lengte voor de tijdbalk is kleiner dan de huidige lengte van de tijdbalk. De tijdbalk zal dus worden ingekort, waarbij het mogelijk is dat inhoud aan het einde van de tijdbalk verloren gaat. Weet je zeker dat je dit wil doen?
+track_height:Hoogte
+track_name:Naam
+track_names:Namen
+track_address:Nummer
+track_first_address:Eerste kanaal
+track_type:Type
+track_group:Groep
+track_count:Aantal
+track_count_cannot_be_negative:Het aantal sporen kan niet negatief zijn.
+track_duplicate:(Kopie)
+tracks_without_client:Voor de volgende sporen is geen geaddresseerde client:
+track_add_dialog:Spoor toevoegen
+track_add_dialog_question:Vul de gegevens in om een nieuw spoor aan de tijdbalk toe te voegen
+tricks:Tips & Trucs
+
+toolbar_addresses:Adressering laten zien
+toolbar_add_track:Spoor toevoegen...
+toolbar_add_multi:Meerdere (dezelfde) sporen toevoegen...
+toolbar_add_track_from_file:Spoor toevoegen uit bestand...
+toolbar_add_timeline:Tijdbalk toevoegen
+toolbar_hide:Verberg werkbalk
+toolbar_insert:Invoegen (alle sporen)
+toolbar_insert_one:Invoegen (geselecteerde spoor)
+toolbar_lock:Tijd volgen
+toolbar_move_track_up:Geselecteerde spoor naar boven verplaatsen
+toolbar_move_track_down:Geselecteerde spoor naar beneden verplaatsen
+toolbar_network:Netwerk
+toolbar_new:Nieuw
+toolbar_zoom:Zoomen
+toolbar_open:Openen
+toolbar_remove_track:Geselecteerde spoor verwijderen
+toolbar_save:Opslaan
+toolbar_save_as:Opslaan als
+toolbar_select:Selecteer-modus
+toolbar_timelines:Tijdbalken
+toolbar_timelines_show:Laat tijdbalk zien
+toolbar_doc_properties:Show-eigenschappen...
+toolbar_promote:Server-status
+toolbar_settings:Show-instellingen...
+toolbar_preferences:Voorkeuren...
+toolbar_fullscreen:Volledig scherm
+toolbar_set_runmodes:Afspeelmodi aanpassen
+toolbar_timeline_properties:Tijdbalk-eigenschappen
+toolbar_view_settings:Weergave-opties
+toolbar_script_editor:Nieuw scriptvenster...
+toolbar_web_browser:Nieuwe webbrowser...
+toolbar_global_pause:Alles pauzeren
+toolbar_global_resume:Alle gepauzeerde tijdbalken hervatten
+toolbar_global_stop:Alles stoppen
+toolbar_global_play:Hoofdtijdbalk starten
+toolbar_theme:Kleurenschema kiezen
+
+variables:Variabelen
+variable:Variabele
+variable_add:Variabele toevoegen
+variable_remove:Geselecteerde variabele verwijderen
+variable_name:Naam
+variable_description:Omschrijving
+variable_bind_to_input:Koppelen aan invoer...
+variable_initial_value:Beginwaarde
+variable_value:Waarde
+variable_change:Waarde veranderen
+variable_change_question:Voer de nieuwe waarde in
+variable_untitled:Nieuwe variabele
+variable_reset:Variabele resetten
+variable_type:Type
+variables_local:Lokaal (bij tijdbalk)
+variables_global:Globaal (bij show)
+variable_property_insert:Variabele invoegen
+variable_is_input:Van buitenaf te wijzigen
+variable_is_output:Waarde uitvoeren
+variable_tag_input:IN
+variable_tag_output:OUT
+
+value_plugin_friendly_name:Waarde
+value_plugin_description:Met deze plug-in kunt u waarden van sporen op andere tijdbalken wijzigen. Alleen voor geavanceerde gebruikers!
+value_track_target:Doelwaarde
+
+video_not_supported:Deze computer ondersteund geen 3D-video. Controleer of DirectX 9.0c geinstalleerd is.
+min_tick_length:Minimum tick-lengte (geavanceerd)
+zoom_level:Venstergrootte
+atl_initialization_failed:Het initialiseren van ATL (ActiveX) is mislukt. Mogelijk werken bepaalde functies niet (goed).
+webserver_disabled_error:De webclient is op dit moment uitgeschakeld. U kunt de webclient weer inschakelen door het poortnummer in te stellen (via menu Vensters -> Instellingen) en TJShow opnieuw op te starten.

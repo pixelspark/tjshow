@@ -1,0 +1,97 @@
+media_audio_plugin_friendly_name:Audio
+media_audio_plugin_description:An audio track can play back audio files.
+media_audio_track_type:Audio
+media_plugin_friendly_name:Media
+media_plugin_description:The media plug-in can be used to play back audio and video
+media_balance:Balance
+media_color:Color
+media_volume:Volume
+media_opacity:Alpha
+media_live_feed:Live #
+media_reset_on_stop:Blank screen on stop
+media_soundcard:Sound card
+media_track_add_block:Right-click on this track to add files
+media_track_height:Height
+media_track_type:Media
+media_block_live_source:Live-feed (index)
+media_block_filename:Filename
+media_block_begin_time:Begin (time)
+media_block_length:Length (time)
+media_block_real_length:File length
+media_block_text:Text
+image_block_font_name:Font
+media_block_timing:Timing
+media_video_blur:Blur
+media_video_vignet:Vignet
+media_image_properties:Image
+media_image_advanced:Advanced
+
+media_category:Media
+media_control_group_name:Media
+media_default_file:Default file
+
+media_endpoint_alpha:Transparency (alpha)
+
+media_keying:Keying
+media_keying_enabled:Enable keying
+media_keying_tolerance:Tolerance
+media_keying_color:Transparent color
+
+media_endpoint_volume:Media (volume)
+media_endpoint_opacity:Media (opacity)
+
+media_screen:Screen
+
+media_video_position:Video-position (initial)
+media_video_position_faders:Video-position (fader scale)
+media_video_scale:Size
+media_video_rotate:Rotation
+media_video_translate:Position
+media_video_gamma:Gamma
+
+media_image_dimensions:Dimensions
+media_image_width:Width (pixels)
+media_image_height:Height (pixels)
+media_image_font_size:Font size (pixels)
+media_image_text_is_field:Text field
+media_image_text_border:Show border
+image_block_text_color:Text color
+image_block_text:Text
+
+media_image_track_type:Image
+media_image_text_track_type:Text
+media_image_text_plugin_friendly_name:Text
+media_image_text_plugin_description:The text plug-in can be used to show text on the screen.
+
+media_image_plugin_friendly_name:Image
+media_image_plugin_description:The image plug-in can be used to show images on screen.
+
+media_masters:Masters
+media_masters_hint:Type a list of masters names, e.g. "MasterA,MasterB,MasterC"
+media_master_id:Master-name
+media_master_plugin_friendly_name:Media-master
+media_master_plugin_description:Media masters can be used to mix the volumes of several media tracks
+media_master_endpoint:Media-master
+media_masters_volume:Masters (volume)
+media_masters_alpha:Masters (alpha)
+
+media_master_flavour:Parameter
+media_master_flavour_alpha:Opacity
+media_master_flavour_volume:Volume
+media_master_flavour_blur:Blur-effect
+media_master_flavour_vignet:Vignet-effect
+media_master_flavour_gamma:Gamma-effect
+media_master_flavour_mosaic:Mosaic-effect
+media_master_flavour_saturation:Saturation
+
+media_image_file:Image
+media_image_file_down:Image (mouse down)
+media_outlet_clicked:Clicked
+media_outlet_clicked_x:X-coordinate of click
+media_outlet_clicked_y:Y-coordinate of click
+media_outlet_text:Text entered
+
+effect_none:None
+effect_volume:Volume
+effect_alpha:Alpha Transparency
+effect_gamma:Gamma

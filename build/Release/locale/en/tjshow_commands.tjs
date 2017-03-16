@@ -1,0 +1,4 @@
+command_bundle_resources:Bundle used files
+command_check_resources:Check used files
+command_open_file:Open file
+command_save_file:Save file

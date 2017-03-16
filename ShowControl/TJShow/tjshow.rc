@@ -1,0 +1,187 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,1,0,0
+ PRODUCTVERSION 2,1,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041304b0"
+        BEGIN
+            VALUE "CompanyName", "TJ"
+            VALUE "FileDescription", "TJShow"
+            VALUE "FileVersion", "4.0"
+            VALUE "InternalName", "TJShow"
+            VALUE "LegalCopyright", "Copyright (C) 2005-2009"
+            VALUE "OriginalFilename", "TJShow.exe"
+            VALUE "ProductName", " TJShow"
+            VALUE "ProductVersion", "4.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x413, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TJ                  ICON                    "res\\icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENUEX 
+BEGIN
+    POPUP "$menu_file",                     65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "$menu_file_new",              ID_NEW,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_file_open",             ID_OPEN,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_file_save",             ID_SAVE,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_file_saveas",           ID_SAVEAS,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_file_import",           ID_IMPORT,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "$menu_file_show_checker",     ID_CHECK_SHOW,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_file_show_deploy",      ID_DEPLOY_SHOW,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_file_resources_bundle", ID_BUNDLE_RESOURCES,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "$menu_file_exit",             ID_EXIT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "$menu_view",                     65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "$menu_view_show_toolbar",     ID_SHOW_TOOLBAR,MFT_STRING,MFS_CHECKED
+        MENUITEM "$menu_view_fullscreen",       ID_FULLSCREEN,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "$menu_windows",                  65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "$menu_windows_preferences",   ID_PREFERENCES,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_windows_settings",      ID_SETTINGS,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_windows_event_log",     ID_EVENT_LOG,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "$menu_windows_tree",          ID_SHOW_TREE,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_windows_script_editor", ID_SCRIPT,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_windows_plugins",       ID_PLUGINS,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_windows_capacities",    ID_CAPACITIES,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_windows_variables",     ID_VARIABLES,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "$menu_windows_log",           ID_SHOW_LOG,MFT_STRING,MFS_ENABLED
+        MENUITEM "$menu_windows_about",         ID_ABOUT,MFT_STRING,MFS_ENABLED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAIN_ACCELERATOR ACCELERATORS 
+BEGIN
+    VK_F1,          ID_ABOUT,               VIRTKEY, NOINVERT
+	VK_F2,          ID_GLOBAL_PLAY,         VIRTKEY, NOINVERT
+	VK_F3,          ID_GLOBAL_RESUME,       VIRTKEY, SHIFT, NOINVERT
+	VK_F3,          ID_GLOBAL_PAUSE,        VIRTKEY, NOINVERT
+	VK_F4,          ID_GLOBAL_STOP,         VIRTKEY, NOINVERT
+	
+	VK_F9,          ID_OPEN_WEBCLIENT,      VIRTKEY, NOINVERT
+	VK_F11,         ID_SCRIPT,              VIRTKEY, NOINVERT
+	VK_F12,         ID_DEBUG_INFO,          VIRTKEY, NOINVERT
+
+    VK_TAB,         ID_COLLAPSE,            VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_FULLSCREEN,          VIRTKEY, ALT, NOINVERT
+
+    "N",            ID_NEW,                 VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_OPEN,                VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_SAVE,                VIRTKEY, CONTROL, NOINVERT
+	"Z",			ID_UNDO,				VIRTKEY, CONTROL, NOINVERT
+	"Z",			ID_REDO,				VIRTKEY, CONTROL, SHIFT, NOINVERT
+END
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

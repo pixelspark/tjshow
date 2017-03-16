@@ -1,0 +1,256 @@
+<?xml version='1.0' ?>
+<?xml-stylesheet type="text/xsl" href="protocol.xsl" ?>
+
+<protocol name="T4" version="4">
+  <types>
+    <type name="Action" size="1">
+      <value id="0" name="ActionNone" />
+      <value id="1" name="ActionAnnounce" />
+      <value id="2" name="ActionLeave" />
+      <value id="3" name="ActionUpdate" />
+      <value id="4" name="ActionUpdatePlugin" />
+      <value id="5" name="ActionSetAddress" />
+      <value id="6" name="ActionPushResource" />
+      <value id="7" name="ActionFindResource" />
+      <value id="8" name="ActionAdvertiseResource" />
+      <value id="9" name="ActionReportError" />
+      <value id="10" name="ActionListDevices" />
+      <value id="11" name="ActionListDevicesReply" />
+      <value id="12" name="ActionListPatches" />
+      <value id="13" name="ActionListPatchesReply" />
+      <value id="14" name="ActionSetPatch" />
+      <value id="15" name="ActionResetAll" />
+      <value id="16" name="ActionInput" />
+      <value id="17" name="ActionPromoted" />
+      <value id="18" name="ActionDemoted" />
+      <value id="19" name="ActionAnnounceReply" />
+      <value id="20" name="ActionOutletChange" />
+      <valie id="21" name="ActionResetChannel" />
+    </type>
+
+    <type name="PacketFlags" size="1">
+      <value id="1" name="PacketFlagReliable"/>
+      <value id="2" name="PacketFlagRequestRedelivery"/>
+      <value id="3" name="PacketFlagCannotRedeliver"/>
+      <valie id="4" name="PacketFlagRedelivery"/>
+    </type>
+    
+    <type name="ChannelID" size="2">
+      <value name="Any channel" from="1" to="65536" />
+    </type>
+
+    <type name="GroupID" size="2">
+      <value id="0" name="Broadcast" />
+      <value name="Any group" from="1" to="65536" />
+    </type>
+
+    <type name="ReliablePacketID" size="4">
+      <value from="0" to="UINT_MAX" name="The reliable packet id; only makes sense when the 'reliable' packet flag is set." />
+    </type>
+    
+    <type name="PluginHash" size="4">
+      <value from="0" to="UINT_MAX" name="Valid plug-in hash" />
+    </type>
+    
+    <type name="TransactionIdentifier" size="4">
+      <value id="0" name="Not in transaction" />
+      <value name="Any valid transaction on receiving node" from="0" to="UINT_MAX"/>
+    </type>
+    
+    <type name="Features" size="4">
+      <value name="FeaturesUnknown" id="1" />
+      <value name="FeatureFileServer" id="2" />
+      <value name="FeatureBatteryPoewr" id="4" />
+      <value name="FeatureACPower" id="8" />
+      <value name="FeatureBackupPower" id="16" />
+      <value name="FeaturePlugin" id="32" />
+      <value name="FeatureEventLogger" id="64" />
+      <value name="FeaturePrimaryMaster" id="128" />
+      <value name="FeatureAutomaticFailover" id="256" />
+    </type>
+    
+    <type name="Role" size="4">
+      <value name="RoleNone" id="0" />
+      <value name="RoleMaster" id="1" />
+      <value name="RoleClient" id="2" />
+    </type>
+    
+    <type name="InstanceID" size="4">
+      A number which uniquely identifies a node on the network.
+    </type>
+    
+    <type name="wstring">
+      Variable size string; first unsigned integer declares the length, then the individual characters follow (as 16-bit wide characters)
+    </type>
+    
+    <type name="ResourceIdentifier">
+      Variable size string; first unsigned integer declares the length, then the individual characters follow (as 16-bit wide characters). Identifies a resource.
+    </type>
+    
+    <type name="DeviceIdentifier">
+      Variable size string; first unsigned integer declares the length, then the individual characters follow (as 16-bit wide characters). Identifies a device.
+    </type>
+    
+    <type name="PatchIdentifier">
+      Variable size string; first unsigned integer declares the length, then the individual characters follow (as 16-bit wide characters). Identifies a patch.
+    </type>
+    
+    <type name="bool">
+      Boolean value
+      <value name="True" id="1"/>
+      <value name="False" id="0"/>
+    </type>
+    
+    <type name="float" size="4">
+      A floating point value (32-bits).
+    </type>
+  </types>
+
+  <units>
+    <unit name="Packet">
+      <unit name="PacketHeader">
+        <field name="Version" type="char[2]" size="2">
+          <value id="{'T', '4'}" name="T4"/>
+          This is always {'T','4'} and identifies the protocol version
+        </field>
+
+        <field name="Flags" type="PacketFlags" size="1">
+          The flags that apply to this packet (mostly for reliable packets/redelivery support)
+        </field>
+        
+        <field name="Action" type="Action" size="1">
+          This identifies the action the packet is doing
+        </field>
+
+        <field name="ReliablePacketID" type="ReliablePacketID" size="4">
+          The ID of this packet; only makes sense when the 'reliable' packet flag is set. The reliable packet
+          ID increments with each reliable packet sent from a certain host. The receiving end should maintain a 
+          list of the last received reliable packet ID for each sending instance.
+        </field>
+        
+        <field name="Group" type="GroupID" size="2">
+          Identifies the group to which this message is sent, or 0 if sent to all nodes
+        </field>
+
+        <field name="Channel" type="ChannelID" size="2">
+          Identifies the channel to which this message is sent, or 0 if not applicable or when group equals 0.
+        </field>
+        
+        <field name="Plugin" type="PluginHash" size="4">
+          Identifies the plug-in this message should be delivered to on the client.
+        </field>
+        
+        <field name="Transaction" type="TransactionIdentifier" size="4">
+          Identifies the transaction for which this is a reply on the receiving node, or 0 when it was not sent in a transaction.
+        </field>
+        
+        <field name="From" type="InstanceID" size="4" required="yes">
+          Identifies the sending node by its instance ID.
+        </field>
+        
+        <field name="Size" type="unsigned int" size="4" required="yes">
+          The number of bytes in the rest of this packet (payload)
+        </field>
+      </unit>
+      
+      <unit name="Payload">
+        <choice>
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionNone"/></when>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionAnnounce"/></when>
+            <field name="Role" type="Role" size="4">The role of the sending node</field>
+            <field name="Features" type="Features" size="4">The features of the sending node</field>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionLeave" /></when>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionUpdate" /></when>
+            <!-- TODO -->
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionUpdatePlugin" /></when>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionSetAddress" /></when>
+            <field name="Instance" type="InstanceID" size="2">The specific client to set the address on</field>
+            <field name="Address" type="wstring">The address</field>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionPushResource" /></when>
+            <field name="Resource" type="ResourceIdentifier">The resource to be pushed</field>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionFindResource" /></when>
+            <field name="Resource" type="ResourceIdentifier">The resource to be found</field>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionAdvertiseResource" /></when>
+            <field name="Port" type="unsigned short" size="2">The port the resource can be downloaded on</field>
+            <field name="Resource" type="ResourceIdentifier">The resource that can be downloaded</field>
+            <field name="URL" type="wstring">The URL on the sending server where the resource can be downloaded (i.e. starts with '/')</field>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionReportError" /></when>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionListDevices" /></when>
+            <field name="To" type="InstanceID">The client that should reply to this message</field>
+            <field name="Transaction" type="TransactionIdentifier">The transaction to which the client should respond with (multiple) ActionListDevicesReply messages</field>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionListDevicesReply" /></when>
+            <field name="Device" type="DeviceIdentifier"></field>
+            <field name="FriendlyName" type="wstring"></field>
+            <field name="IsLastDevice" type="bool" size="4"></field>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionListPatches" /></when>
+            <field name="To" type="InstanceID">The client that should reply to this message</field>
+            <field name="Transaction" type="TransactionIdentifier">The transaction to which the client should respond with (multiple) ActionListDevicesReply messages</field>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionListPatchesReply" /></when>
+            <field name="Patch" type="PatchIdentifier"></field>
+            <field name="Device" type="DeviceIdentifier"></field>
+            <field name="IsLastDevice" type="bool" size="4"></field>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionSetPatch" /></when>
+            <field name="To" type="InstanceID">The client that should reply to this message</field>
+            <field name="Patch" type="PatchIdentifier"></field>
+            <field name="Device" type="DeviceIdentifier"></field>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionResetAll" /></when>
+          </option>
+          
+          <option>
+            <when field="Action" in-unit="PacketHeader"><value name="ActionInput" /></when>
+            <field name="Patch" type="PatchIdentifier" />
+            <field name="InputChannel" type="int" size="4" />
+            <field name="InputSubChannel" type="int" size="4" />
+            <field name="Value" type="float" size="4" />
+          </option>
+        </choice>
+      </unit>
+    </unit>
+  </units>
+</protocol>

@@ -1,0 +1,55 @@
+midi_input_friendly_name:MIDI Input-device
+midi_input_description:MIDI input-devices can send commands and triggers to TJShow
+
+midi_category:MIDI
+midi_cc_plugin_friendly_name:MIDI CC
+midi_cc_plugin_description:With MIDI CC, you can send 'control change' messages to supporting devices to change various parameters.
+midi_cc_track_height:Height
+midi_cc_channel:Kanaal
+midi_cc_control:Control
+midi_cc_control_group_name:MIDI
+midi_cc_device:Device
+midi_cc_wrong_device:An incompatible (non-MIDI) device was patched
+
+midi_mmc_plugin_friendly_name:MIDI MMC
+midi_mmc_plugin_description:With MIDI MMC (Machine Control), you can control devices that support the MMC-standard.
+midi_mmc_output_device:Device
+midi_mmc_channel:Device ID
+midi_mmc_device_id:Device ID
+
+midi_msc_plugin_friendly_name:MIDI MSC
+midi_msc_plugin_description:With MIDI MSC, you can control various devices that implement the MIDI Show Control standard protocol.
+midi_msc_device_id:Device ID
+midi_msc_command_format:Command format
+midi_msc_cue_send:Send MSC cue
+midi_msc_cue_time:Time
+midi_msc_cue_command:Command
+midi_msc_empty_hint:Right-click here to add MSC-cues
+midi_msc_cue:MSC-cue
+midi_msc_cue_number:Number
+midi_msc_cue_list:Cuelist
+midi_msc_cue_path:Path
+midi_msc_output_device:Device
+midi_msc_default_cue_list:Default cuelist
+midi_msc_default_cue_path:Default path
+midi_msc_cues:MSC cues
+midi_msc_use_track_default:Use track default
+midi_msc_cue_description:Description
+
+midi_serial_out_device:MIDI over Serial Output
+
+midi_voice_plugin_friendly_name:MIDI Channel
+midi_voice_plugin_description:With a MIDI Channel, you can send messages like note on, note off and program change to devices that support it.
+midi_voice_channel:Channel
+midi_voice_program_change:Program Change (PC)
+midi_voice_empty_hint:Click right to add notes or program change cues
+midi_voice_program:Program
+midi_voice_output_device:Device
+midi_voice_note:Note
+midi_voice_note_on:Note On
+midi_voice_note_off:Note Off
+midi_voice_note_id:Note
+midi_voice_note_velocity:Velocity
+midi_voice_notes_off_on_stop:All notes off on stop
+midi_voice_view_preferences:View preferences
+midi_voice_show_note_names:Show note names (GM)

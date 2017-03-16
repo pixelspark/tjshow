@@ -1,0 +1,5 @@
+crash_question:Due to an unexpected problem, TJShow has been shut down. To prevent such problems in the future, you can now choose to send more information about this problem to the developers. Please see the manual about what information will be sent. Do you want to send this information?
+crash_title:TJShow Crashreporter
+crash_successfully_sent:The information about the problem that has just occurred has been successfully sent. Thank you for your participation!
+crash_not_sent:The information about the problem that has just occurred could not be sent.
+crash_argument_error:This program is meant to be runned by other programs when a problem is encountered.

@@ -1,0 +1,7 @@
+settings_net_port_balloon:Netwerkpoort voor het besturen van clients. Gebruik op alle computers hetzelfde poortnummer.
+settings_net_address_balloon:Multicast-adres voor het besturen van clients. Gebruik op alle computers hetzelfde adres.
+settings_tick_length_balloon:Stelt in hoe vaak het programma zijn scherm vernieuwt. Verhoog deze instelling op trage computers.
+settings_min_tick_length_balloon:Beperkt het aantal ticks dat een spoor per seconde mag krijgen. Verhoog deze instelling op trage computers. Een hoge waarde geeft mogelijk minder precieze timing.
+settings_default_track_height_balloon:Stelt de minimumhoogte voor sporen in de tijdbalk in.
+enable_resource_advertise:Bestands-distributie inschakelen
+enable_resource_advertise_balloon:Wanneer deze optie ingeschakeld is, kunnen clients over het netwerk automatisch bestanden voor de show downloaden van deze computer.

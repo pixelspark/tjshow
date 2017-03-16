@@ -1,0 +1,614 @@
+application_name:TJShow
+advanced:Advanced
+add_track_from_file:Add track from file...
+add_empty_track:Add new track...
+ui_font:Tahoma
+address:Address
+background_image:Background image
+battery_low:Low battery!
+browser_web_client:Browser
+
+assignments:Assignments
+assignment_add:Add statenemnt...
+assignment_remove:Remove selected statement
+assignment_up:Move statement up
+assignment_down:Move statement down
+
+capacities:Guards
+capacities_list:List
+capacities_graph:Graph
+capacities_graph_rebuild:Update graph
+capacities_graph_clear:Clear graph
+capacity_add:Add guard
+capacity_initial:Initial value
+capacity_remove:Remove guard
+capacity_remove_confirm:Are you sure you want to remove this guard?
+capacity_reset:Reset guard
+
+capacity_name:Name
+capacity_description:Description
+capacity_value:Current value
+capacity_release:Release guard
+capacity_use:Use guard
+capacity_untitled:New guard
+capacity_none:[None]
+capacity_waiting:Waiting timelines
+capacity_waiting_unknown:[Unknown]
+capacity_up:Move up
+capacity_down:Move down
+capacities_graph_hide_all:Hide all items
+capacities_graph_save_image:Save as image...
+
+change_remove_track:Track removed
+change_add_cue:Cue added
+
+change_playback_speed_to:Playback speed:
+cannot_change_run_mode_while_playing:The playback mode of a track cannot be changed during playback.
+channel_exists:Another track exists that uses the same channel. Please change the channel of this track.
+clients:Network
+client_ip:IP-address
+client_device_count:Number of devices
+client_role:Role
+client_filter:Member of group(s)
+client_instance:Instance ID
+client_settings:Settings...
+client_settings_title:Settings
+client_disconnected:Client has disconnected:
+client_list_empty:There are no clients in the network. If there should be, please check your network settings.
+client_mac_address:MAC address
+client_wake:Start client (using Wake-on-LAN)
+client_no_cached:No clients have been rememberd
+client_exit:Exit
+client_show_log:Show log messages
+
+couldnt_create_track:The new track couldn't be created.
+choose_color:Choose...
+
+dashboard:Dashboard
+dashboard_widget_add:Add a widget
+dashboard_design:Change dashboard
+dashboard_widget_remove:Remove widget
+dashboard_widget_label:Label
+dashboard_widget_label_text:Label text
+dashboard_widget_label_position:Label position
+dashboard_widget_label_position_bottom:Below widget
+dashboard_widget_label_position_right:Right of widget
+dashboard_empty:The dashboard is still empty. Right-click here to add a widget.
+
+expression:Expression
+expression_constant:Constant
+expression_constant_type:Type
+expression_expression:Expression
+expression_expression_question:Enter the expression here
+expression_arithmetic:Mathematical...
+expression_logic:Logical...
+expression_field:Field in tuple
+expression_change_constant:Change value of constant...
+expression_variable:Variable
+expression_op_add:+	Add
+expression_op_subtract:-	Subtract
+expression_op_multiply:*	Multiply
+expression_op_divide:/	Divide
+expression_op_field:->	Field in tuple
+expression_op_modulo:%	Modulo (rest)
+expression_op_greater:>	Greater than
+expression_op_smaller:<	Smaller than
+expression_op_equals:==	Equals
+expression_op_not_equals:!=	Not equals
+expression_op_or:||	Logical OR
+expression_op_and:&&	Logical AND
+expression_op_xor:^^	Logical XOR (exclusive OR)
+expression_op_negate:!	Logical negation
+expression_op_negate_number:-	Change sign
+expression_op_abs:|	Absolute value
+expression_remove_term:Remove this term
+expression_change_variable:Change variable...
+expression_no_variable:No variable
+expression_choose_variable:Variable
+expression_string:Text
+expression_nullary:Dynamic value
+expression_change_function:Choose function...
+expression_op_sin:sin	Sine
+expression_op_cos:cos	Cosine
+expression_op_tan:tan	Tangent
+expression_op_asin:asin	Arc sine
+expression_op_acos:acos	Arc cosine
+expression_op_atan:atan	Arc tangent
+expression_op_sqrt:sqrt	Square root
+expression_op_log:log	Logarithm (base 10)
+
+controller_started_time:Started at 
+controller_stopped_time:Stopped at 
+controller_late_initialization:A few tracks were started too late, because their initialization took too long.
+
+com_initialization_failed:COM could not be initialized. Although this is not required for the application, video and other plug-ins might not work.
+confirm_remove_track:Are you sure you want to remove this track?
+confirm_new:Are you sure you want to start a new file?
+confirm_remove_all_cues:Are you sure you want to remove all cues?
+could_not_load_track_from_file:Could not one or more tracks. Probably, this version of TJShow does not support the plug-ins used to create these tracks. Do not save this file with this version of TJShow if you want to retain these tracks.
+
+cue:Cue
+cues:Cues
+
+cue_bind_to_input:Bind to input...
+cue_capacity_size:Count
+cue_take_capacity:Use guard
+cue_release_capacity:Release guard
+cue_private:Private (not triggerable)
+cue_description:Description
+cue_description_header:Extra information
+cue_advanced:Advanced
+cue_allow_waiting:Allow waiting
+cue_actions:Behaviour
+cue_dont_jump:
+cue_distant:Trigger
+cue_distant_property:Cue
+cue_distant_none:[None]
+cue_name:Name
+cue_nameless:[Unnamed cue]
+cue_time:Time
+cue_jump:Jump to
+cue_color:Color
+cue_add:Add cue
+cue_action:Action
+cue_action_none:None
+cue_action_start:Start playback
+cue_action_stop:Stop playback
+cue_action_pause:Pause playback
+cue_script:Script
+cue_press_ctrl_to_move:Press [Ctrl] to move this cue
+cue_view_settings:View options
+cue_next_unknown:There is no next cue
+cue_next_continue:Continue
+
+cue_expression_type_wait:Wait for expression
+cue_expression_type_skip:Skip when expression false
+cue_expression_type_pause:Pause timeline when expression false
+cue_expression_type:Expression options
+
+cuelist_show_nameless:Show nameless cues
+cuelist_only_show_play_cues:Only show 'play'-cues
+command_line_help_title:TJShow: Arguments for execution
+command_line_help:tjshow.exe M [file to open] or tjshow.exe C [address]
+
+debug:Debug
+default_track_height:Track height
+delete_track:Remove track
+delete_cue:Remove cue
+device_identifier:Device identifier
+device_client_identifier:Device identifier (client)
+duplicate_track:Clone track
+doubly_used_channels:Some channels are used by more than one track: 
+detach_tab:Tear-off tab page
+demote:Demote this server
+
+enable_timeline_tooltips:Timeline tooltips
+enable_resource_warnings:Warn when files are missing
+enable_resource_advertise:Enable resource server
+enable_resource_advertise_balloon:If enabled, TJShow clients on the network will automatically download files from this master when needed.
+enable_noclient_warnings:Warn on incorrect addressing
+enable_sticky_faders:Sticky faders
+enable_animations:Enable animations
+
+execute_command_queue:Execute command queue
+error:Error
+error_unknown:An unknown error has occurred.
+error_create_patches_before_binding:There are no patches to attach to. Please create a patch first.
+error_patch_must_have_name:You did not enter a name for this patch.
+error_plugin_not_found_for_track:The following track could not be loaded and created, since the plug-in is not available: 
+error_timed_thread_crashed:A player thread crashed. Usually, this is a programming error in a plug-in. It is recommended that you restart TJShow.
+error_on_client:An error has occurred on a client
+error_in_streamplayer_creation:Could not start plug-in on a client
+event_log:Events
+event_read:
+event_type:Type
+event_date:Time
+event_message:Message
+event_list_empty_text:There are no events in the log at this time.
+exit_still_playing:There are still timelines playing. You cannot quit the program or open a new show when there are still timelines playing. Do you want to stop all timelines?
+
+fader_data:Fader data
+fader_data_question:Edit the fader point data by changing the data below.
+fader_data_label:Data
+fader_data_change:Edit
+faders_choose:Faders
+faders_choose_hint:Choose
+features:Features
+feature_unknown:Unknown
+feature_ac_power:AC powered
+feature_backup_power:Backup power
+feature_battery_power:Battery powered
+feature_file_server:Fileserver
+feature_primary_master:Primary server
+feature_automatic_failover:Automatic failover
+
+go_to_time:Jump to time...
+
+groups:Groups
+groups_none_defined:No groups have been defined yet
+group_add_dialog:Add group
+group_add_dialog_question:Create a group to play back tracks on clients
+group_all:All clients
+group_add:Add group...
+group_remove:Remove group
+group_id:ID
+group_color:Group color
+group_name:Group name
+group_list_empty_text:No groups have been defined yet
+
+hostname:Hostname
+import_warning:By importing a file, you are adding it to the current file. Are you sure you want to continue?
+import_select_file:Choose a file to import
+insert_from_control:Insert value from control
+input_attach:Attach to input...
+input_attach_question:Choose device and channels to attach to
+input_patch:Device
+input_details:Input parameters
+input_channel_id:Channel
+input_sub_channel_id:Sub-channel / note
+input_endpoint:Endpoint
+
+instancer_name:Instance
+instancer_description:With an instance, you can run multiple copies of a timeline at the same time, with different parameters.
+instancer_cue_time:Time
+instancer_no_cues:No cues have been added yet (right-click to add a cue)
+instancer_no_timeline:[None]
+instancer_timeline:Timeline
+instancer_cue_none:[None]
+instancer_target_cue:Target cue
+instancer_cannot_change_timeline:The timeline of this instance track cannot be changed while the track is playing.
+instancer_change_timeline_warning:By changing the timeline of this instance, all cues on this track will be removed.
+instancer_input_variables:Parameters
+
+is_primary_master:This is the primary server
+is_secondary_master:This is a secondary server
+
+item:Item
+
+key_delete_track:Delete track
+latency_ms:Latency (ms)
+leave_full_screen:Exit full-screen
+license_invalid:The license for TJShow is invalid. Contact TJ for more information.
+live_control_bind_to_input:Bind to input...
+live_control_endpoint:Track with address 
+
+live_wnd:Live
+live_wnd_reveal_track:Reveal track in timeline
+license_feature_disabled:The following functionality could not be used, because of a license restriction:
+logger:Log
+local_variables:Variables
+lock_track:Lock track
+move_cue_to_now:Move cue to current time
+move_control:Move...
+move_control_to:Move to group...
+move_track_to:Move track to...
+
+model_title:Title
+model_author:Author
+model_version:Version
+model_properties:Properties
+model_notes:Notes
+
+multifader_enable_dialog_title:Enable/disable faders
+multifader_enable_dialog_question:Choose which faders are enabled
+
+negative_channel_error:A channel address cannot be negative!
+new_track:New track
+network:Network
+new_track_name:New name:
+new_channel:New channel:
+no_cues:No cues have been defined yet. Cues without a name might not appear in this list.
+no_track_selected:Select a track to remove first.
+no_name_given:You did not enter a name.
+no_variables_defined:There are no variables defined yet
+node_demoted_passive:This server is not the primary server anymore; another server took over
+node_demoted_active:This server has been demoted by you and is not the primary server anymore
+node_promoted:This server is now the primary server
+
+nullary_null:Null
+nullary_hours:Hours (0..23)
+nullary_minutes:Minutes (0..59)
+nullary_seconds:Seconds (0..59)
+nullary_day_of_month:Day of month (1..31)
+nullary_day_of_week:Day of week (0..6)
+nullary_name_of_month:Month name
+nullary_month:Month (1..12)
+nullary_year:Year
+nullary_random:Random (0..1)
+nullary_function:Function
+nullary_name_of_day:Name of day
+nullary_pi:Pi
+nullary_euler:e (Euler)
+
+outputs:Output
+open_file_select:Choose file...
+open_cue_list:Show cue list...
+other_category:Other
+player:Video
+
+
+outlets:Output to variables
+outlet_not_connected:(None)
+
+paste_selection:Paste selection
+patch_name:Patch name
+patch_none:No device
+patch_no_clients_connected:No clients discovered
+patch_device:Device
+patch_client_device:Device (on client)
+patch_choose_client_to_edit:Choose a client to edit patching
+patch_add:Add patch...
+patch_add_question:Please fill in all the fields to create a patch
+patch_remove:Remove selected patch
+patch_no_device:Click here to assign device
+patches_link:Patch devices
+patches_none_defined:There are no patches defined
+
+player_thread_error:An unknown error has occurred, probably outside TJShow-code. Please restart the program. If the problem persists, try removing plugins and try again.
+
+plugins:Plug-ins
+plugin_name:Name
+plugin_module:Module
+plugin_type:Type
+plugin_author:Author
+plugin_version:Version
+plugin_hash:ID
+
+port:Port
+properties:Properties
+properties_network:Network
+properties_timing:Timing
+properties_preferences:Preferences
+properties_other:Other
+properties_general:General
+
+preferences:Preferences
+preferences_changes_need_restart:Some settings that you have changed will not take effect before restarting the program.
+preferences_question:Change the settings to match your preferences right here.
+preview_properties:Preview screen properties
+preview_properties_question:Here you can change the properties of this preview screen
+problem_resource_not_found:File not found
+problem_channel_doubly_used:Doubly used channel number
+problem_no_show_info:Show information missing
+problem_type:Problem
+problem_description:About
+problem_report:Problems
+problem_report_for:Problems in 
+
+promote:Promote this server
+promote_force:Force promotion for this server
+promotion_in_progress:Promotion initiated...
+promote_cancel:Cancel promotion
+
+quit:Exit
+refresh:Refresh
+remove_items_between_range:Time interval (ms):
+readdress_track:Change track address
+readdress_track_question:Set a new channel address for this track
+
+rediscover_devices:Search for devices
+resources:Resources
+resource_path:File
+resource_location:Location
+resource_remove:Remove resource reference
+resource_add_file:Add existing file...
+resource_add_new:Add new file...
+resource_select:Select resource file
+resource_script:Script
+resource_missing_on_client:A file is missing on a client
+resource_model_not_saved:You cannot add files to this list when the model is not saved. Please save the model to continue.
+resource_bundling_in_progress:Files are being copied to the bundle, please wait...
+resource_bundling_done:The file bundle is ready.
+resource_bundle_select_file:Create or select a file bundle
+resource_open:Open
+resource_open_in_browser:Open (in browser)
+resource_open_folder:Open containing folder
+resource_run:Run
+resource_size:Size
+resource_search:Find file on network...
+resource_search_hint:Enter a file name in the field above to search for it
+resource_search_title:Find file
+resource_list_empty:No files have been added to this resource list yet.
+resource_remove_file:Remove file from list
+rename_track:Rename track
+runmode:Run mode
+runmode_none:Do not play
+runmode_master:Play on master
+runmode_client:Play on client
+runmode_both:Play on master and client
+
+role_master:Master
+role_client:Client
+role_none:No role
+
+unknown_output:Unknown output type
+unknown_client:Unknown client
+readdress:Change address...
+resources_no_missing:All referenced files are available.
+resources_one_or_more_missing:One or more referenced files are unavailable:
+
+enter_full_screen:Show on full screen
+
+script_source:Script
+script_alert:Info
+
+save_prompt:Do you want to save the changes to the current show?
+save_track:Save track...
+settings:Show-settings
+screen:Screen
+screen_preview:Video-window
+screen_scale_mode:Scale mode
+scale_mode_all:Scale to make everything visible
+scale_mode_stretch:Scale to screen (stretch)
+scale_mode_max:Scale to screen (no stretching)
+scale_mode_none:Do not scale
+screen_is_touch:Touch-screen
+screen_document_width:Scene width
+screen_document_height:Scene height
+screen_background_color:Background color
+screen_show_guides:Show rulers
+show_deployer:Deploy show
+show_deployed_successfully:The show is being deployed; any files needed on clients will automatically be copied to the client.
+show_deployed_with_errors:The show is being deployed; any files needed on clients will automatically be copied to the client. A few errors were still found in the show. When you click 'OK', a listing of these errors will be opened. 
+show_log:Show application log...
+show_notifications:Show notifications
+show_checker_no_errors:No errors were found in this show.
+show:Show
+save_file_select:Save to...
+search:Search:
+search_banner:
+selection_remove_items:Remove items in selection	Del
+selection_remove_cues:Remove cues in selection
+selection_copy_items:Copy items in selection	Ctrl-C
+selection_paste_items:Paste selection	Ctrl-V
+selection_zoom:Zoom to selection
+settings_input:Input
+settings_audio:Audio
+settings_patches:Devices
+settings_groups:Groups
+settings_clients:Network
+show_checker:Check show
+visible_tracks:Alle visible tracks...
+smooth_quality:High quality
+settings_preferences:Preferences
+stats_interval:Interval
+stats_drift_average_before:Average drift:
+stats_drift_average_after:ms
+stats_plugin_friendly_name:Statistics
+stats_plugin_description:Lies, damn lies, and statistics
+subnet:Subnet
+sub_timeline:Timeline
+sub_timeline_description:Creates a new timeline under this timeline.
+subtimeline_block_time:Time
+subtimeline_block_target_time:Target time
+subtimeline_block_action:Type
+subtimeline_block_action_sync:Synchronize
+subtimeline_block_action_play:Play
+subtimeline_block_action_stop:Stop
+subtimeline_block_target_cue:Target cue
+subtimeline_no_cues:No cues have been created to start/stop this sub-timeline. Right-click here to create a cue.
+soundcard_id:ID
+soundcard_name:Device name
+tick_length:Tick-length (advanced)
+
+time_format_ms:Show time in milliseconds (ms)
+time_format_friendly:Show time as clock time
+time_format_sequential:Show time as sequence number
+
+timeline:Timeline
+timeline_description:Description
+timeline_length:Timeline length
+timeline_name:Name
+timeline_next_play_cue:Play at next 'play' cue
+timeline_no_tracks:No tracks have been added to this timeline. Create tracks by clicking on the '+' button.
+timeline_stop_all:Stop timeline and sub timelines
+timeline_pause_all:Pause playing timeline and child timelines
+timeline_resume_all:Resume paused timeline and child timelines
+timeline_remove_hint:(Drag far down to remove)
+timeline_trick_zoom_text:Drag (with right mouse button down) in time scale to zoom
+timeline_trick_zoom:Zooming in
+timeline_trick_zoom_scroll:Zooming (mouse)
+timeline_trick_zoom_scroll_text:Press Ctrl and use the scroll wheel to zoom
+timeline_trick_fader_dots:Removing items
+timeline_trick_fader_dots_text:Drag items (like fader dots) far down to remove.
+timeline_play:Play timeline
+timeline_stop:Stop timeline
+timeline_pause:Pause timeline
+timeline_restart:Reset timeline
+timeline_time:Current time
+
+timeline_tree:Timelines
+timeline_tree_open:Show timeline tree
+timeline_next_cue:Next cue
+timeline_previous_cue:Previous cue
+timeline_pointer:Pointer
+timeline_select:Select
+timeline_follow:Follow timeline when playing
+timeline_show_addresses:Show group colors
+set_timeline_length:Change timeline length
+set_timeline_length_question:Choose a new length for this timeline
+timeline_shrink_warning:The timeline is about to be made shorter. Some items may be removed; this action cannot be undone. Are you sure you want to do this?
+
+track_add_dialog:Add track
+track_add_dialog_question:To create a track, fill in the fields below
+track_height:Height
+track_name:Name
+track_names:Names
+track_address:Number
+track_first_address:First address
+track_group:Group
+track_duplicate:(Copy)
+track_type:Type
+track_count:Count
+track_count_cannot_be_negative:You cannot create a negative number of tracks.
+track_already_has_this_address:This track already has the address you specified!
+tracks_without_client:The following tracks do not have a client addressed to them: 
+tricks:Tips & Tricks
+
+toolbar_addresses:Show channels
+toolbar_add_track_from_file:Add track from a file
+toolbar_add_multi:Add multiple tracks of the same type
+toolbar_add_timeline:Add a timeline
+toolbar_add_track:Add track
+toolbar_hide:Hide toolbar
+toolbar_insert:Insert values from control (all tracks)
+toolbar_insert_one:Insert values from control (selected track)
+toolbar_global_pause:Pause all playing timelines
+toolbar_global_resume:Resume all paused timelines
+toolbar_global_stop:Full stop
+toolbar_lock:Follow time
+toolbar_move_track_up:Move track up
+toolbar_move_track_down:Move track down
+toolbar_network:Network
+toolbar_new:New
+toolbar_zoom:Zoom
+toolbar_open:Open
+toolbar_promote:Server status
+toolbar_preferences:Preferences
+toolbar_remove_track:Remove selected track
+toolbar_save:Save
+toolbar_save_as:Opslaan als
+toolbar_select:Select-mode
+toolbar_doc_properties:change show-properties
+toolbar_settings:Settings
+toolbar_fullscreen:Full screen
+toolbar_set_runmodes:Change run modes
+toolbar_timeline_properties:Timeline properties
+toolbar_theme:Choose theme
+toolbar_script_editor:New script editor...
+toolbar_web_browser:New browser window...
+toolbar_timelines:Timelines
+toolbar_timelines_show:Show timeline
+toolbar_view_settings:View settings
+toolbar_global_play:Start main timeline
+
+variable:Variabele
+variables:Variables
+variable_add:Add variable
+variable_remove:Remove selected variable
+variable_name:Name
+variable_bind_to_input:Bind to input...
+variable_description:Description
+variable_initial_value:Initial value
+variable_value:Value
+variable_change:Change value
+variable_change_question:Enter the new value for this variable
+variable_untitled:New variable
+variable_reset:Reset selected variable
+variable_type:Type
+variable_property_insert:Insert variable
+variables_local:Local (in timeline)
+variables_global:Global
+variable_is_input:Variable can be changed externally
+variable_is_output:Variable is exported
+variable_tag_input:IN
+variable_tag_output:OUT
+
+value_plugin_friendly_name:Control value
+value_plugin_description:This plug-in can control certain control values on other tracks.
+value_track_target:Target control value
+video_not_supported:This computer does not support advanced 3D video. Please check if DirectX 9.0c is properly installed and your video drivers are up-to-date.
+min_tick_length:Minimal tick length (advanced)
+zoom_level:Window size
+atl_initialization_failed:ATL initialization failed. Some functions might not work properly.
+webserver_disabled_error:The web client is currently disabled by settings.

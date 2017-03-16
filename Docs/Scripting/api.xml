@@ -1,0 +1,578 @@
+<?xml version='1.0' ?>
+<?xml-stylesheet type="text/xsl" href="api.xsl" ?>
+
+<api name="TJShow v3.0">
+  <description>
+    This API allows you to access a lot of TJShow's functionality through the built-in scripting language (TJScript). This API also provides
+    access to several external libraries, including the TJDB database layer.
+  </description>
+
+  <class name="[global]">
+    All objects that are generally available when scripting. 
+  
+    <member name="view" type="ViewScriptable">
+      The view represents the user interface part of the application.
+    </member>
+    
+    <member name="alert" type="void">
+      <param name="message" type="String">The message to display</param>
+      Shows a modal alert (script will continue only after the alert has been dismissed)
+    </member>
+
+    <member name="guards" type="CapacitiesScriptable">
+      Returns the guards list for the current show.
+    </member>
+
+    <member name="variables" type="Variables">
+      Returns the show variables list for the current show.
+    </member>
+    
+    <member name="notify" type="void">
+      <param name="message" type="String">The message to display</param>
+      Shows a non-modal notification. May not work on clients.
+    </member>
+    
+    <member name="log" type="void">
+      <param name="message" type="String">The message to log</param>
+      Adds a message to the application-wide log. 
+    </member>
+    
+    <member name="out" type="WebserverScriptable">
+      Object for writing to the client when running as web-script
+    </member>
+    
+    <member name="info" type="StatsScriptable">
+      Object providing performance information such as network and memory usage
+    </member>
+    
+    <member name="plugins" type="PluginManagerScriptable">
+      Object providing the list of plugins discovered and active in the application
+    </member>
+    
+    <member name="root" type="InstanceScriptable">
+      The root instance object. Holds timeline and cues for the main timeline.
+    </member>
+    
+    <member name="output" type="OutputManagerScriptable">
+      Output manager object, manages media playback and a lot of other output options for plugins built into TJShow.
+    </member>
+
+    <member name="network" type="NetworkScriptable">
+      Network manager object; manages communication with clients and this node's role on the network.
+    </member>
+    
+    <member name="defer" type="void">
+      Queues a delegate script in the application work queue. These scripts are executed asynchronously in the main thread. Depending on in which thread the 
+      script runs (and/or the main thread waits for the script to finish), the delegate scripts may be run at the same time or after execution of the script.
+      
+      <param name="delegate" type="delegate">The delegate to execute</param>
+    </member>
+  </class>
+
+  <class name="NetworkScriptable">
+    <member name="bytesReceived" type="integer">The total number of bytes recieved by the TNP socket. Includes plug-in messages, but not any other sockets such as webserver traffic</member>
+    <member name="bytesSent" type="integer">The total number of bytes sent by the TNP socket.</member>
+    <member name="toString" type="string">The name of this class</member>
+    <member name="isPrimaryServer" type="boolean">Returns true if this node is the primary server</member>
+    <member name="isConnected" type="boolean">Returns true if this node is connected to a network</member>
+    <member name="isClient" type="boolean">Returns true if the role of this node is 'client'</member>
+    <member name="isServer" type="boolean">Returns true if the role of this node is 'server'</member>
+    <member name="role" type="string">Returns the human-readable (localized) name of the current role for this node</member>
+    <member name="cancelPromotion" type="void">Cancels a promotion, if it is in progress</member>
+    <member name="promote" type="void">Start promotion (try to promote this node to primary server)</member>
+    <member name="demote" type="void">Actively demote this node, if it is the primary server</member>  
+  
+    This class manages network connections and node behaviour on a show network.
+  </class>
+
+  <class name="ViewScriptable">
+    <member name="new" type="void">Creates a new, empty show</member>
+    <member name="open" type="void">Asks the user to open a show from file</member>
+    <member name="save" type="void">Asks the user to save the current show to a file</member>
+
+    This class provides scripting for the user interface.
+  </class>
+
+  <class name="StatsScriptable">
+    <member name="gcCount" type="integer">The number of objects allocated using the GC (garbage collector)</member>
+    <member name="revisionID" type="integer">Internal version number of the main application.</member>
+    <member name="revisionDate" type="string">The 'revision date' for the main application (date at which the application was compiled).</member>
+  
+    Provides statistics and performance data such as network and memory usage.
+  </class>
+  
+  <class name="WebserverScriptable">
+    Provides methods for writing data to the client (for web-scripts only) that requested the script.
+    
+    <member name="write">
+      <param name="data" type="string">The data to write</param>
+      Writes data to the client.
+    </member>
+  
+    <member name="header">
+      Sets any parameter given to this function as a HTTP-header (for example, use Content_Type="text/html").
+    </member>
+  </class>
+  
+  <class name="CueListScriptable">
+    <member name="size" type="integer">The number of cues in this cue list</member>
+    <member name="get" operator="[]">
+      <param name="key" type="string" />
+      Returns the cue with the name specified in parameter 'key', or null if that cue does not exist. When multiple cues share the same name, this
+      method will return anyone of them.
+    </member>
+    
+    <member name="clear" type="void">Clears the list of cues</member>
+    <member name="iterate" type="Iterator">Returns an iterator for all cues in this list</member>
+    <member name="add" type="CueScriptable">
+      <param name="time" type="integer">Time in ms</param>
+      Adds a cue to this cue list at the specific time and returns the newly added cue. 
+    </member>
+    
+    <member name="next" type="CueScriptable">
+      <param name="time" type="integer">Time in ms</param>
+      Searches for the next cue after the given time and returns it.
+    </member>
+    
+     <member name="previous" type="CueScriptable">
+      <param name="time" type="integer">Time in ms</param>
+      Searches for the last cue before the given time and returns it.
+    </member>
+    
+    A list of cues, mostly attached to some timeline.
+  </class>
+  
+  <class name="CueScriptable">
+    <member name="name" type="string">The name of this cue</member>
+    <member name="time" type="integer">The time for this cue (in ms)</member>
+    <member name="set">
+      <param name="name" type="string" required="no"/>
+      <param name="time" type="integer" required="no"/>
+      Sets name and/or time for this cue, if the parameters are set.
+    </member>
+    
+    A single cue on a timeline.
+  </class>
+  
+  <class name="InstanceScriptable">
+    An instance is a timeline playing back.
+    <member name="stop" type="void">Stops playback</member>
+    <member name="stopAll" type="void">Stops playback on this controller and child controllers</member>
+    <member name="pauseAll" type="void">Pauses all playing child-controllers and this controller if they are playing</member>
+    <member name="resumeAll" type="void">Resumes this controller if it is paused or any paused child controller</member>
+    <member name="play" type="void">Starts playback</member>
+    <member name="pause" type="void">Pauses playback</member>
+    <member name="isPlaying" type="boolean">Returns true if the controller is playing</member>
+    <member name="isPaused" type="boolean">Returns true if the controller is paused</member>
+    <member name="speed" type="double">Returns the current playback speed</member>
+    <member name="playerCount" type="int">Returns the number of players currently active (during playback)</member>
+    <member name="streamPlayerCount" type="int">Returns the number of client (stream) players currently active</member>
+    <member name="name" type="string">The name of the timeline this controller is attached to</member>
+    <member name="time" type="int">Returns the current time</member>
+    <member name="id" type="string">The ID of the timeline this controller is attached to. ID's are used for unique identification of timelines for serialization purposes only. For all
+    other purposes, just pass the reference to this controller scriptable (which also is much more performant by the way!). This member exists for debugging purposes.</member>
+      
+    <member name="set">
+      <param name="speed" type="double" required="no">The playback speed; 0.0 = no speed at all, 1.0 is normal speed and any other number is the normal speed multiplied by that number.</param>
+    </member>
+    
+    <member name="jump">
+      <param name="time" type="integer" required="no">The time on the timeline to jump to in ms</param>
+      <param name="cue" type="string" required="no">Name of a cue on the timeline; will jump to the time that the cue has</param>  
+      Jumps to a time on the timeline, specified by the time or a cue on the timeline.
+    </member>
+
+    <member name="trigger">
+      <param name="cue" type="CueScriptable" required="yes">The cue to trigger (must be a public/triggerable cue!)</param>
+      Triggers a cue on a timeline.
+    </member>
+    
+    <member name="get" type="TrackScriptable" operator="[]">
+      Returns a track specified by name, or null if no such track exists.
+      <param name="key" type="string">The name or channel of the track to get</param>
+    </member>
+    
+    <member name="cues" type="CueListScriptable">Cue-list associated with this controller/timeline</member>
+    <member name="tracks" type="Iterator">Iterator to iterate over all tracks in this timeline</member>
+    <member name="speed" type="double">Current playback speed</member>
+    <member name="length" type="integer">The length of the timeline in ms</member>
+  </class> 
+  
+  <class name="TrackScriptable">
+    <member name="name" type="string" mutable="yes">Name of this track</member>
+    <member name="locked" type="boolean" mutable="yes">True if the track is locked for modification</member>
+    <member name="channel" type="integer" mutable="yes">The TNP channel this track is addressed to</member>
+    <member name="runsOnClient" type="boolean">True if this track is set to run on a client</member>
+    <member name="runsOnMaster" type="boolean">True if this track is set to run on a master</member>
+    <member name="plugin" type="PluginScriptable">The plug-in that provides this track</member>
+    <member name="control" type="LiveControlScriptable">Returns the live control associated with this track, or null if there isn't any.</member>
+    <member name="isTimeline" type="boolean">True if this track is a sub-timeline</member>
+  </class>
+  
+  <class name="LiveControlScriptable">
+    <member name="toString" type="string">Returns the type of this live control scriptable (mostly LiveControlScriptable)</member>
+    <member name="groupName" type="string">Returns the group name this live control is in</member>
+    <member name="[]" type="EndpointScriptable">Returns the endpoint associated with this control and the specified name, or null if there is no such
+      endpoint.
+      <param name="key" type="string" required="yes">The name of the endpoint (see the track documentation for endpoint names. If in doubt, use 'value' for the default endpoint (see below))</param>
+    </member>
+    <member name="value" type="EndpointScriptable">Returns the endpoint associated with this control, or null if there is none</member>
+    Represents a live control associated with a track. Live controls are created when the track is created and are added to special
+    live control group-windows.
+  </class>
+  
+  <class name="EndpointScriptable">
+    <member name="set" type="void">
+      <parameter name="value" type="double">The value to set (can also be boolean)</parameter>
+    </member>
+    An endpoint is an object where the input system can feed values to. It can be some slider, a script or anything else.
+  </class>
+  
+  <class name="OutputManagerScriptable">
+    Provides an interface to the output manager object.
+    <member name="getDeviceByPatch" type="DeviceScriptable">
+      <parameter name="patch" type="string">A patch name</parameter>
+      Returns a device for a specific patch, or null if that patch does not exist or is not patched to a device.
+    </member>
+  </class>
+
+  <class name="DeviceScriptable">
+    <member name="friendlyName" type="string">The friendly name of the device</member>
+    <member name="identifier" type="string">The internal, unique identifier of the device</member>
+    <member name="isMuted" type="boolean">True if the device is muted, false otherwise</member>
+    <member name="mute" type="void">
+      <parameter name="mute" type="boolean">True if you want to mute the device, false otherwise</parameter>  
+      Mutes or unmutes a device
+    </member>  
+    
+    Represents a device, provided by TJShow or a plug-in.
+  </class>
+
+  <class name="Variable">
+    Information about a show variable (modifying variable values is possible through the Variables object)
+    <member name="id" type="string">Returns the ID of the variable</member>
+    <member name="name" type="string">Returns the user friendly name of this variable</member>
+    <member name="description" type="string">Returns the description of this variable</member>
+    <member name="value" type="integer">Returns the current value of this variable</member>
+    <member name="initialValue" type="integer">Returns the initial value for this value</member>
+  </class>
+
+  <class name="Variables">
+    Holds a list of variables for a show and manages changes to them.
+    <member name="count" type="integer">Returns the number of variables defined</member>
+    <member name="get" type="Variable" operator="[]">
+      <param name="key" type="string">The ID or name of the variable</param>  
+      Returns a variable by ID or name
+     </member>
+    <member name="set">
+      <param name="variable" type="Variable">The variable to assign to</param>
+      <param name="value" type="integer">The value to assign to the variable</param>  
+      Sets a variable
+    </member>
+  </class>
+
+  <class name="CapacitiesScriptable">
+    <member name="count" type="int">
+      Returns the number of capacities defined in this object.
+    </member>
+
+    <member name="list" type="Iterator">
+      Returns an iterator for all capacities defined.
+    </member>
+  </class>
+
+  <class name="CapacityScriptable">
+    A capacity is a way of locking mutually exclusive parts of two timelines.
+    
+    <member name="name" type="string">The name of the capacity</member>
+    <member name="description" type="string">The description of the capacity</member>
+    <member name="used" type="int">Amount of capacity used</member>
+    <member name="free" type="int">Amount of capacity free</member>
+    <member name="initial" type="int">Amount of initial capacity</member>
+    
+    <member name="set" type="void">
+      <param name="name" type="string">The new name for this capacity</param>
+      <param name="description" type="string">The new description for this capacity</param>
+    </member>
+    
+    <member name="reset" type="void">Resets the capacity (e.g. clears the waiting queue and sets the value to zero)</member>
+  </class>
+  
+  <class name="FaderScriptable">
+    Provides a scripting interface to the faders. Tracks choose to make this interface accessible or not.
+    
+    <member name="add" type="void">
+      <param name="time" type="integer"></param>
+      <param name="value" type="integer">The value to insert at the time. Can be either integer or double, depending on what the track fader uses. Types will be converted
+      if they do not match.</param>
+      Adds a point to the fader
+    </member>
+    
+    <member name="remove" type="void">
+      <param name="time" type="integer"></param>
+      Removes the item (if it exists) at the specified time.
+    </member>
+    
+    <member name="removeBetween" type="void">
+      <param name="from" type="integer"></param>
+      <param name="to" type="integer"></param>
+      Removes all items between times from and to.
+    </member>
+    
+    <member name="removeAll" type="void">Removes all points from this fader</member>
+    <member name="maximumValue" type="integer">Returns the maximum value this fader can store</member>
+    <member name="minimumValue" type="integer">Returns the minimum value this fader can store</member>
+    <member name="defaultValue" type="integer">Returns the default value this fader uses</member>
+  </class>
+  
+  <!-- Script internal -->
+  <class name="Map" internal="yes">
+    An ordered map containing string -&gt; object mappings.
+    
+    <constructor>
+      Creates a new, empty map. Every parameter given to the constructor will be added to the map as key-value mapping.
+    </constructor>
+    
+    <member name="get" type="any" operator="[]">
+      <param name="key" type="string"/>
+      Retrieves the object associated with the 'key' given.
+    </member>
+    
+    <member name="set" type="void">
+      Sets one or more key-value mappings in this map. Every parameter given to this method will be added to the array as key-value mapping.
+    </member>
+    
+    <member name="keys" type="Iterator">
+      Returns an iterator with which you can iterate over all the keys. The iterator thus returns objects of type string.
+    </member>
+    
+    <member name="keys" type="Iterator">
+      Returns an iterator with which you can iterate over all the values. The iterator thus returns objects of any type you put in the array.
+    </member>
+    
+    <member name="size" type="integer">Returns the number of key-value mappings in this map</member>
+  </class>
+
+  <class name="Array" internal="yes">
+    An ordered array of objects.
+    
+    <constructor>
+      Creates a new, empty array. Arrays can also be created using the array syntax: [1,2,3,4].
+    </constructor>
+
+    <member name="get" type="any" operator="[]">
+      <param name="key" type="string"/>  
+      Retrieves the object at the specified index (starting at index 0) from the array. Throws an exception of that index is out of bounds.
+    </member>
+
+    <member name="push" type="void">
+      <param name="object" type="any">The object to push</param>
+      Adds an object at the end of the array.
+    </member>
+
+    <member name="pop" type="any">
+      Returns the last object in this array, removing it from the array at the same time.
+    </member>
+
+    <member name="count" type="ínteger">
+      Returns the number of elements in this array.
+    </member>
+
+    <member name="implode" type="string">
+      <param name="glue" type="string">The separator to place between elements (default is ", ")</param>
+      <param name="nestBegin" type="string">The string to add in front of a nested array (default is "[")</param>
+      <param name="nestEnd" type="string">The string to add after a nested array(default is "]")</param>  
+      Concatenates the objects in the array as strings. If a nested array is encountered, the string specified by nestBegin
+      is added to the string, the nested array is imploded using the same parameters and nestEnd is added to the string. This works
+      recursively.
+    </member>
+
+    <member name="values" type="iterator">
+      Returns an iterator over all array elements.
+    </member>
+  </class>
+  
+  <class name="any" internal="yes"> 
+    Represents any object or object type, including internal values, functions or types. Can also be null.
+  </class>
+  
+  <class name="Iterator" internal="yes">
+    An iterator is an object that supports iterating. You can use it in for(var x: iterator) where iterator is the iterator for the collection you want to iterate.
+  </class>
+  
+  <class name="Hash" internal="yes">
+    <constructor>
+      Creates the hash of a given string.
+      <param name="data" type="string">The string to hash</param>
+    </constructor>
+    
+    <member name="toString" type="string">Returns the hash in string form</member>
+    <member name="toInt" type="integer">Returns the hash in integer form</member>
+    
+    The hash is a simple object to create a 32-bit (integer) hash of any string. It is immutable, which means that once the hash is created, it cannot be modified.
+  </class>
+  
+  <class name="Range" internal="yes">
+    <implements>Iterator</implements>
+    
+    <constructor>
+      <param name="from" type="integer"/>
+      <param name="to" type="integer"/>
+      Creates a new Range.
+    </constructor>
+
+    <member name="size" type="integer">The distance between from and to (the total number of integer elements this range contains)</member>
+    <member name="isInside" type="boolean">
+      <param name="value" type="integer">The integer to test for</param>
+      Returns true if the value is inside this range, otherwise false.
+    </member>
+    
+    A range represents a range of integer numbers, most commonly used in the for loop. The Range is inclusive (so [from,to]). Ranges are iterators, so you can use them in for-loops.
+  </class>
+  
+  <class name="Math" internal="yes">    
+    <member name="random" type="double" static="yes">
+      Returns a random number between from and to inclusive.
+      <param name="from" type="integer"/>
+      <param name="to" type="integer"/>
+    </member>
+
+    <member name="pi" type="double">Returns pi (3.14159)</member>
+    <member name="e" type="double">Returns e (2.718)</member>
+    
+    <member name="cos" static="yes" type="double"><param name="angle" type="double" />Returns the cosine of the angle specified</member>
+    <member name="sin" static="yes" type="double"><param name="angle" type="double" />Returns the sine of the angle specified</member>
+    <member name="tan" static="yes" type="double"><param name="angle" type="double" />Returns the tangens of the angle specified</member>
+    <member name="acos" static="yes" type="double"><param name="angle" type="double" />Returns the inverse (arc) cosine of the angle specified</member>
+    <member name="asin" static="yes" type="double"><param name="angle" type="double" />Returns the inverse (arc) sine of the angle specified</member>
+    <member name="atan" static="yes" type="double">Returns the inverse (arc) tangens of the angle specified<param name="angle" type="double" /></member>
+    
+    <member name="atan2" static="yes" type="double">
+      Returns the angle belonging to the point (x,y) 
+      <param name="x" type="double" />
+      <param name="y" type="double" />
+    </member>
+
+    <member name="pow" type="double" static="yes">
+      Returns a to the b'th power.
+      <param name="a" type="double"/>
+      <param name="b" type="double"/>
+    </member>
+    
+    <member name="fmod" type="double" static="yes">
+      Returns a mod b (or simply the 'rest' of a divided by b).
+      <param name="a" type="double"/>
+      <param name="b" type="double"/>
+    </member>
+  </class>
+  
+  <class name="ScriptScope" internal="yes"> 
+    A ScriptScope holds variables in a function call, if/else, for or scope block. If a variable cannot be found in it,
+    it will search in the linked 'previous' scriptscope. 
+    
+    <member name="delete" type="void">
+      Deletes a variable.
+      <param name="var" type="string">Name of the variable to delete</param>
+    </member>
+    
+    <member name="exists" type="boolean">
+      Returns true if the variable exists.
+      <param name="var" type="string">Name of the variable to check</param>
+    </member>
+  </class>
+  
+  <class name="integer" internal="yes">
+    Natural number, either positive or negative. Limited to 31 bits (so maximum/minimum value is +- 2^31). 
+  </class>
+  
+  <class name="double" internal="yes">
+  </class>
+  
+  <class name="int" internal="yes">
+  </class>
+  
+  <class name="void" internal="yes">
+    Indicates no return type (type is null)
+  </class>
+  
+  <class name="null" internal="yes">
+    This type has only one value: 'null'. 
+  </class>
+  
+  <class name="boolean" internal="yes">
+    Either 'true' or 'false'.
+  </class>
+  
+  <class name="string" internal="yes">
+    A string is any value with any characters (except ") placed between "". 
+    <member name="toUpper" type="string">Returns this string with all characters upper-cased.</member>
+    <member name="toLower" type="string">Returns this string with all characters lower-cased</member>
+    <member name="length" type="int">The length of this string</member>
+    <member name="explode" type="Array">
+      <param name="separator" type="string">The string on which to split this string (default is ',')</param>
+      Splits this string using the separator given and returns an array with the pieces.
+    </member>
+  </class>
+  
+  <class name="delegate" internal="yes">
+    A delegate is a separate script as a variable in another script. You can define one using a delegate {}-block. Any variables
+    referenced inside the delegate are resolved when the delegate is run, so the delegate cannot be 'connected' in any way to the 'outer'
+    script.
+  </class>
+
+  <!-- TJDB Database API; tjscriptdb.cpp -->
+  <class name="Database">
+    <constructor>
+      Create a new database connection to a database identified with a file path. This class opens and closes the database automatically.
+      <param name="path" type="string">Path to the database</param>
+    </constructor>
+
+    <member name="name" type="string">
+      Returns the name of the underlying implementation of this database connection (such as 'SQLite')
+    </member>
+
+    <member name="version" type="string">
+      Returns the version of the underlying database implementation.
+    </member>
+
+    <member name="query" type="Query">
+      Creates a new query with the given SQL statement.
+      <param name="sql" type="string">The SQL statement for this query. May contain parameters with the syntax ':whatever'. The value of this parameter can then later be set using the query.whatever member.</param>
+    </member> 
+    
+    The Database class represents a database connection, as implemented by the TJDB library.
+  </class>
+
+  <class name="Query">
+    <implements>iterator</implements>
+    <member name="hasRow" type="boolean">Returns true if a result row is loaded</member>
+    <member name="next" type="void">Iterator method; fetches a new row of the result set. If the query isn't executed yet, it executes the query first.</member>
+    <member name="execute" type="void">Executes the query and loads the first row of the result set. Use this if you are not using the iterator syntax (i.e. you want to retrieve a single row or execute a query that doesn't return results).</member>
+    <member name="set" type="void">
+      Sets a query parameter. You can also use the member access syntax (someObject.parameter = "test"). Each parameter pair to this function
+      will be used to set a parameter (so you can make calls like set(param1="value1", param2="value2")).
+    </member>
+    <member name="get" operator="[]">
+      Accesses a cell value in the current row. Use 'next' to move to the next row. Only works if hasRow returns true.
+      <param name="key" type="integer">Numerical index of the column; starting at 0 for the leftmost column</param>
+    </member>  
+    Implements a database query as in the TJDB library. Create a Query object by calling 'query' on a Database object.
+  </class>
+  
+  <!-- plugins -->
+  <class name="DMXTrackScriptable">
+    <implements>TrackScriptable</implements>
+    
+    <member name="dmxChannel" type="string">The DMX address for this track (in patching)</member>
+    <member name="set">
+      <param name="dmxChannel" type="string">The new DMX address to set</param>
+    </member>
+    
+    <member name="fader" type="FaderScriptable">The DMX value fader (values from 0 to 255)</member>
+  </class>
+  
+  <class name="MediaTrackScriptable">
+    <member name="volume" type="FaderScriptable">The volume fader; values from 0.0 to 1.0</member>
+    <member name="opacity" type="FaderScriptable">The opacity fader; values from 0.0 to 1.0</member>
+  </class>
+</api>

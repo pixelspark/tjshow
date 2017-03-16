@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<help>
+  <tricks>
+    <trick title="timeline_trick_zoom" text="timeline_trick_zoom_text" image="resources/help/images/timeline-zoom.png" />
+    <trick title="timeline_trick_zoom_scroll" text="timeline_trick_zoom_scroll_text" image="resources/help/images/timeline-zoom-scroll.png" />
+    <trick title="timeline_trick_fader_dots" text="timeline_trick_fader_dots_text" image="resources/help/images/timeline-fader-dots.png" />
+  </tricks>
+</help>

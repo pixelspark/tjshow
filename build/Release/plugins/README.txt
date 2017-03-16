@@ -1,0 +1,1 @@
+Output folder for built plug-ins. This file ensures Git keeps the directory around.

@@ -1,0 +1,86 @@
+media_audio_plugin_friendly_name:Audio
+media_audio_plugin_description:Met de audio-plugin kun je audio afspelen.
+media_audio_track_type:Audio
+media_plugin_friendly_name:Video
+media_plugin_description:Met de video-plugin kun je audio en video afspelen op de TJShow master en clients.
+media_balance:Balans
+media_category:Media
+media_color:Kleur
+midi_category:Media
+media_volume:Volume
+media_opacity:Alpha
+media_live_feed:Live: 
+media_endpoint_volume:Volume
+media_endpoint_alpha:Transparantie (alpha)
+media_soundcard:Geluidskaart
+media_track_add_block:Klik rechts op dit spoor om een bestand toe te voegen
+media_track_height:Hoogte
+media_track_type:Video
+media_block_filename:Bestandsnaam
+media_block_live_source:Live-bron
+media_block_begin_time:Begin (tijd)
+media_block_length:Lengte (tijd)
+media_block_real_length:Echte lengte
+media_block_text:Tekst
+image_block_font_name:Font
+media_block_timing:Timing
+media_control_group_name:Media
+media_default_file:Standaardbestand
+media_reset_on_stop:Zwart scherm bij stoppen
+
+media_video_position:Video-positie
+media_video_position_faders:Positie-faders (schaal)
+media_video_scale:Afmetingen
+media_video_rotate:Rotatie
+media_video_translate:Positie
+media_video_gamma:Gamma
+media_video_blur:Blur
+media_video_vignet:Vignet
+
+media_image_properties:Afbeelding
+media_image_dimensions:Afmetingen
+media_image_width:Breedte (pixels)
+media_image_height:Hoogte (pixels)
+media_image_font_size:Lettergrootte (pixels)
+media_image_text_border:Rand tonen
+image_block_text_color:Tekstkleur
+image_block_text:Tekst
+
+media_image_advanced:Geavanceerd
+media_image_track_type:Afbeelding
+media_image_text_track_type:Tekst
+media_image_plugin_friendly_name:Afbeelding
+media_image_plugin_description:Met de image-plugin kun je afbeeldingen op het scherm laten zien.
+media_image_file:Afbeelding
+media_image_file_down:Afbeelding (muis ingedrukt)
+media_image_text_plugin_friendly_name:Tekst
+media_image_text_plugin_description:Met een tekst-spoor kun je tekst op het scherm laten zien.
+media_image_text_is_field:Tekstveld
+
+media_outlet_clicked:Geklikt
+media_outlet_clicked_x:X-positie klik
+media_outlet_clicked_y:Y-positie klik
+media_outlet_text:Ingevoerde tekst
+
+media_masters:Masters
+media_masters_volume:Masters (volume)
+media_masters_alpha:Masters (alpha)
+media_masters_hint:Geef een lijst van master-namen op zoals: masterA,masterB,masterC
+media_master_id:Master-naam
+media_master_plugin_friendly_name:Media-master
+media_master_plugin_description:Kan worden gebruikt om het volume van groepen van media-kanalen in te stellen.
+media_master_endpoint:Media-master
+media_master_flavour:Parameter
+media_master_flavour_alpha:Transparantie
+media_master_flavour_volume:Volume
+media_master_flavour_blur:Blur-effect
+media_master_flavour_vignet:Vignet-effect
+media_master_flavour_gamma:Gamma-effect
+media_master_flavour_mosaic:Mozaïek-effect
+media_master_flavour_saturation:Saturatie
+
+media_keying:Keying
+media_keying_enabled:Keying inschakelen
+media_keying_tolerance:Tolerantie
+media_keying_color:Kleur
+media_screen:Scherm

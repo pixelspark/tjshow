@@ -1,0 +1,9 @@
+beamer_plugin_friendly_name:Beamer
+beamer_plugin_description:Met deze plug-in kun je TJBeamer aansturen. Deze plug-in stuurt zogenaamde 'beats' over het netwerk naar een TJBeamer-master, die daarop kan reageren.
+beamer_help_text:Klik rechts op dit spoor om beamer-cues te maken
+beamer_cue_time:Tijd
+beamer_cue_preset:Preset
+beamer_cue_action:Actie
+beamer_cue_action_beat:Beat
+beamer_cue_action_goto:Ga Naar Preset
+beamer_type_name:Beamer

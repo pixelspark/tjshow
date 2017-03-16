@@ -1,0 +1,9 @@
+browser_plugin_friendly_name:Browser
+browser_plugin_description:The browser plug-in can show webpages on TJShow clients.
+browser_url:URL
+browser:Browser
+browser_hide_on_stop:Hide after playback stops
+browser_help_text:Right click on this track to add cues
+browser_cue_time:Time
+browser_monitor:Display
+ui_category:User interface

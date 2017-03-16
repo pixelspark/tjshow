@@ -1,0 +1,10 @@
+relais_plugin_description:Met de Switch-plugin kan de TJRelais-switchbox worden aangestuurd.
+relais_plugin_friendly_name:Switch
+relais_pin:Uitgang
+relais_device:Apparaat
+relais_color:Kleur
+relais_block_begin_time:Begin (tijd)
+relais_block_length:Lengte (tijd)
+relais_device_unknown_device:[Onbekend]
+relais_endpoint:Switch
+relais_track_hint:Klik rechts op dit spoor om schakelblokken toe te voegen

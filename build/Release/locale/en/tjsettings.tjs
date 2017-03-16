@@ -1,0 +1,6 @@
+settings_net_port_balloon:Network port for managing clients. Make sure you set the port number to the same value on all clients.
+settings_net_address_balloon:Multicast address for managing clients. Make sure you set the same address on all clients.
+settings_tick_length_balloon:Update interval for the user interface in ms. Make larger if the program is unresponsive.
+settings_min_tick_length_balloon:Constrains the maximum number of ticks a player can fire per second. Lowering this value means more precise timing, but higher CPU usage.
+settings_default_track_height_balloon:Sets the minimum height for tracks in the timeline.
+enable_ep_endpoint:Enable remote control

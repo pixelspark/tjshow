@@ -1,0 +1,13 @@
+input_script_endpoint:Script
+input_bind:Bind to input...
+input_bind_question:Select the device and channel you want to bind to this control
+input_device:Input device
+input_channel:Channel
+
+input_device_id:ID
+input_device_name:Device
+input_channel_id:ID
+input_channel_endpoint:Bound to
+input_channel_list_empty_text:Click a device in the list on the left to view its channels
+input_detach_selected:Unbind selected channels
+input_detach_all:Unbind all channels

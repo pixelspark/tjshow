@@ -1,0 +1,13 @@
+Preprocessor defines (which can be used to disable compilation
+of certain functionality):
+
+TJShow
+- TJ_NO_AIRBAG: disables usage of Google Airbag crashreporter.
+
+TJScript:
+- TJ_NO_SPIRIT: disables the script parser (based on Spirit, see tjscriptgrammar.cpp)
+When compiling TJScript, define TJSCRIPT_EXPORTS.
+
+TJShared:
+- TJ_NO_ATL: disables ATL usage, used for BrowserWnd (when ATL is disabled, BrowserWnd will not work properly, but it compiles)
+When compiling TJShared, define TJSHARED_EXPORTS.

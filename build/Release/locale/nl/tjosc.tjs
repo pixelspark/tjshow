@@ -1,0 +1,62 @@
+osc_argument_type:Type
+osc_argument_value:Waarde
+osc_argument_description:Omschrijving
+osc_arguments:Parameters
+osc_argument_add:Parameter toevoegen
+osc_argument_remove:Parameter verwijderen
+osc_argument_up:Parameter naar voren verschuiven
+osc_argument_down:Parameter naar beneden verschuiven
+osc_argument_type_nil:Nil
+osc_argument_type_true:True
+osc_argument_type_false:False
+osc_argument_type_double:Kommagetal (double)
+osc_argument_type_float:Kommagetal (float)
+osc_argument_type_string:Tekenreeks
+osc_argument_type_int32:Integer (32-bits)
+osc_argument_type_int64:Integer (64-bits)
+osc_argument_type_infinitum:Infinitum
+osc_argument_type_char:Byte (0..255)
+osc_argument_type_color:Kleur (RGBA)
+osc_argument_type_midi:MIDI-commando
+osc_argument_type_time:Tijdsaanduiding
+osc_argument_type_blob:Blob
+osc_argument_type_symbol:Symbool
+osc_argument_type_unknown:[Onbekend]
+osc_input_friendly_name:OSC invoer
+osc_category:OSC
+osc_cue_time:Tijd
+osc_cue_description:Omschrijving
+osc_devices:Verbindingen
+osc_input_description:Met een OSC-invoerapparaat kunnen OSC (OpenSound Control) commando's worden gebruikt als invoer voor de show.
+osc_udp_transport_device:OSC-over-UDP
+osc_input_settings:OSC
+osc_input_devices:Invoer
+osc_input_device_id:ID
+osc_input_device_name:Naam
+osc_input_device_type:Type
+osc_input_device_description:Omschrijving
+osc_input_no_devices:Er zijn geen OSC-invoerapparaten gedefiniëerd.
+osc_input_device_add:OSC invoerapparaat toevoegen
+osc_input_device_add_question:Vul de gegevens in om een invoerapparaat toe te voegen
+osc_input_device_remove:Geselecteerd invoerapparaat verwijderen
+osc_input_device_remove_warning:Door het verwijderen van een OSC-invoerapparaat worden patches naar dit apparaat verbroken. Weet je zeker dat je dit OSC-invoerapparaat wil verwijderen?
+osc_udp_address:UDP-adres
+osc_udp_address_any:Alle UDP-adressen
+osc_udp_port:poort
+osc_device_properties:Eigenschappen
+osc_device_properties_question:Stel details in voor dit invoerapparaat
+osc_device_direction:Richting
+osc_device_direction_in:Inkomend
+osc_device_direction_out:Uitgaand
+osc_device_direction_in_tag:In
+osc_device_direction_out_tag:Uit
+osc_device_direction_both:Beide (full-duplex)
+osc_output_plugin_friendly_name:OSC uitvoer
+osc_output_plugin_description:Met een OSC uitvoer-spoor kunt u OSC-commando's versturen naar programma's of apparaten die OSC ondersteunen. Raadpleeg de documentatie van deze apparatuur of software voor de precieze syntax van de OSC-commando's.
+osc_output_device:OSC-apparaat
+osc_output_track_empty_text:Er zijn nog geen OSC-cues gemaakt. Klik rechts op dit spoor om een cue toe te voegen.
+osc_no_arguments:(Geen)
+osc_path_prefix:Voorvoegsel pad
+osc_default_path:Standaardactie
+osc_message_path:Actie (pad)
+osc_message:OSC-commando

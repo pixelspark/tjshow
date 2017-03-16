@@ -1,0 +1,5 @@
+crash_question:Door een onherstelbare fout is TJShow zojuist afgesloten. Om dergelijke fouten in de toekomst te voorkomen, kunt u meer informatie over de fout automatisch laten opsturen naar de ontwikkelaars. Lees de handleiding voor meer informatie over welke informatie wordt verzonden. Wilt u deze informatie verzenden?
+crash_title:TJShow Crashreporter
+crash_successfully_sent:De informatie over de zojuist opgetreden fout in TJShow is verzonden naar de ontwikkelaars. Bedankt voor uw medewerking!
+crash_not_sent:De informatie over de zojuist opgetreden fout in TJShow kon niet worden verzonden. Mogelijk bent u niet verbonden met het Internet.
+crash_argument_error:Dit programma is alleen bedoeld om door een ander programma gestart te worden (zodra een fout optreedt).

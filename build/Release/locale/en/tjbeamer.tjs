@@ -1,0 +1,9 @@
+beamer_plugin_friendly_name:Beamer
+beamer_plugin_description:This plug-in can be used to control TJBeamer masters.
+beamer_help_text:Right-click on this track to create cues.
+beamer_cue_time:Time
+beamer_cue_preset:Preset
+beamer_cue_action:Action
+beamer_cue_action_beat:Beat
+beamer_cue_action_goto:Go to preset
+beamer_type_name:Beamer

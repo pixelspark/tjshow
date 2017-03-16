@@ -1,0 +1,7 @@
+ SConscript([
+'TJShared/SConstruct', 
+'TJScript/SConstruct', 
+'TJNP/SConstruct', 
+'TJScout/SConstruct',
+'TJDB/SConstruct',
+]);

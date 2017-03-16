@@ -1,0 +1,10 @@
+editor_run:Run script
+editor_undo:Undo
+editor_redo:Redo
+editor:Script
+editor_new:New
+editor_open:Open...
+editor_save:Save
+editor_open_file:Open file
+editor_save_file:Save file
+editor_save_as:Save as...
